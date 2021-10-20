@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+<title>mrna_tech.knit</title>
+
+<script src="mrna_tech_files/header-attrs-2.8/header-attrs.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://innoscape.de/mRNA/style.css" type="text/css" />
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-71167447-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-71167447-1', { 'anonymize_ip': true });
+</script>
+<div class="container-fluid main-container">
+
+<meta property='og:title' content='International collaborations and quality of innovations'/>
+<meta property='og:image' content='https://innoscape.de/internat_collab/title_new.jpg'/>
+<meta property='og:description' content='As part of our #Innoscape Project, we investigate how partnering with different locations affects the quality of innovations. In short, collaborating with research sites in the USA and Great Britain has the greatest effect on the quality of innovation.'/>
+<meta property='og:url' content='https://innoscape.ch/en/publications/international-rd'/>
+</head>
+<!-- START with text -->
+<div id="who-is-leading-the-mrna-race" class="section level3">
+<h3><strong>Who is leading the mRNA-race?</strong></h3>
+<p style="text-align: left; line-height: 100%;">
+<em>October 2021</em> by <a href="#" data-placement="bottom" data-toggle="tooltip"  data-html="true" title="<img src='https://innoscape.de/authors/DF_picture.jpg'><b>Dragan Filimonovic</b> is a project collaborator and research associate at the <a href='https://cieb.unibas.ch' target = “_blank”>Center for International Economics and Business | CIEB</a>. He holds a PhD in Economics from the University of Basel and is specialized in applying methods for causal inference to evaluate public policies. Dragan is passionate about working with big data and is always in pursuit of finding creative solutions to interesting economic riddles.
+<br>
+<a href='https://www.linkedin.com/in/dragan-filimonovic-39303b47' target = “_blank”>LinkedIn</a> 
+<br>
+<a href='mailto:dragan.filimonovic@unibas.ch'>dragan.filimonovic@unibas.ch</a>"><em>Dragan Filimonovic</em></a> <em>and</em> <a href="#" data-placement="bottom" data-toggle="tooltip"  data-html="true" title="<img src='https://innoscape.de/authors/Christian Rutzer_small.jpg'> <b>Christian Rutzer</b> is the operational manager of the project and chief scientist of the <a href='https://cieb.unibas.ch' target = “_blank”>Center for International Economics and Business | CIEB</a>. He holds a PhD in Economics from the University of Basel in international trade and innovation. Christian likes to apply new methods from data science to analyze economic questions.
+<br>
+<a href='https://www.linkedin.com/in/christian-rutzer-38978392' target = “_blank”>LinkedIn</a> 
+<br>
+<a href='mailto:christian.rutzer@unibas.ch'>christian.rutzer@unibas.ch</a>"><em>Christian Rutzer</em></a>
+</p>
+<!-- <p style="text-align: left; line-height: 150%;">
+*Share this article:* 
+&nbsp;
+<a href='https://www.linkedin.com/sharing/share-offsite/?url=https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A6838804469455577088/?actorCompanyId=685023090' class="fa fa-linkedin" style='color:black;text-decoration: none;' target='_blank'></a>
+&nbsp;
+<a href='https://twitter.com/cieb_unibas/status/1433007915175235586' class="fa fa-twitter" style='color:black;text-decoration: none;' target='_blank'></a>
+</p>
+ -->
+<p><img src="title_new.jpg" style="width:100.0%" /></p>
+<p><br></p>
+<hr class="hr_red">
+<div id="figure-1" class="section level4">
+<h4><strong>Figure 1: </strong></h4>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.2.1/math.min.js"></script>
+  <script src= "https://d3js.org/d3.v4.min.js"></script>  
+  <script src= "https://d3js.org/d3-color.v1.min.js"></script>  
+  <script src= "https://d3js.org/d3-interpolate.v1.min.js"></script>  
+  <script src= "https://d3js.org/d3-scale-chromatic.v1.min.js"></script>  
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+<script>
+Plotly.d3.csv("https://raw.githubusercontent.com/ch54321/mrna_tech/master/general_trend_mrna.csv", function(err, rows){
+function unpack(rows, key) {
+        return rows.map(function(row) { return row[key]; });
+    }
+
+var     pat_value = unpack(rows, 'value'),
+        filing = unpack(rows, 'filing');
+
+
+
+var data= [{
+            y: pat_value,
+            x: filing,
+            type: 'scatter',
+            mode: 'lines',
+            line: {color: d3.interpolateViridis(0.7),
+                   width: 3},
+            hoverinfo: 'markers'}];
+        
+        
+var layout = {
+ 
+  xaxis: {
+    title: 'Filing year',
+    zeroline: false,
+    showline: false
+  },
+  yaxis: {
+    range: [0.02, 0.1],
+    title: 'mRNA-patents to overall pharma patents',
+    showline: false
+  }
+};
+
+
+
+
+Plotly.newPlot('plot_general', data, layout, {displayModeBar: false});
+});    
+
+</script>
+</head>
+
+<div id='plot_general'></div>
+
+ 
+
+</body>
+    
+<details>
+<summary>
+<em>Click here to get a detailed description of our data-processing steps, empirical model and robustness checks</em>
+</summary>
+<embed src="https://drive.google.com/viewerng/
+viewer?embedded=true&url=https://innoscape.de/internat_collab/Appendix_International_Collaboration.pdf" width="100%" height="600">
+</details>
+<p><br></p>
+</div>
+</div>
+<div id="country-level" class="section level3">
+<h3><strong>Country-level</strong></h3>
+<p><br></p>
+<hr class="hr_red">
+<div id="figure-1-the-effect-of-the-partnering-country-on-the-quality-of-an-innovation" class="section level4">
+<h4><strong>Figure 1: The effect of the partnering country on the quality of an innovation</strong></h4>
+<p><br></p>
+<p><span style="font-size:0.8em"><em>Source and notes: CIEB’s own calculations based on data from the <a href = https://www.patentsview.org target = “_blank”>USPTO</a>. A positive coefficient means that partnering with the respective country is associated with innovations of better quality than solely domestic innovations. A negative coefficient means the opposite. The horizontal bar plots show the corresponding 95% confidence interval. If the lower bound is above zero, the corresponding coefficient is significantly positive at the 95% level or higher. If the upper bound is below zero, the coefficient is significantly negative at the 95% level or higher.</em></span></p>
+<p><br></p>
+</div>
+</div>
+<div id="firm" class="section level3">
+<h3><strong>Firm</strong></h3>
+<p><br></p>
+<hr class="hr_red">
+<div id="figure-2-international-locations-of-patent-inventors-of-swiss-based-firms" class="section level4">
+<h4><strong>Figure 2: International locations of patent inventors of Swiss-based firms</strong></h4>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.2.1/math.min.js"></script>
+  <script src= "https://d3js.org/d3.v4.min.js"></script>  
+  <script src= "https://d3js.org/d3-color.v1.min.js"></script>  
+  <script src= "https://d3js.org/d3-interpolate.v1.min.js"></script>  
+  <script src= "https://d3js.org/d3-scale-chromatic.v1.min.js"></script>  
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+<script>
+
+Plotly.d3.csv("https://raw.githubusercontent.com/ch54321/mrna_tech/master/ctry_trend_mrna.csv", function(err, rows){
+function unpack(rows, key) {
+        return rows.map(function(row) { return row[key]; });
+    }
+
+var     allTech = unpack(rows, 'ctry_inv'),
+        pat_value = unpack(rows, 'value'),
+        filing = unpack(rows, 'filing'),
+        variable = unpack(rows, 'variable'),
+        listofCountries = [],
+        currentCountry = [],
+        currentpat_value = [],
+        currentInv = [],
+      //  currentcountryName = [];
+        color_var = [];
+        current_color = [];
+
+    for (var i = 0; i < allTech.length; i++ ){
+        if (listofCountries.indexOf(allTech[i]) === -1 ){
+            listofCountries.push(allTech[i]);
+        }
+    }
+    
+    
+  
+   function getCountryData(chosenCountry, chosenvar_2) {
+        currentfiling = [];
+        currentpat_value = [];
+        currentInv = [];
+        currentFiling = [];
+     //   currentcountryName = [];
+     //           document.getElementById("demo").innerHTML = variable;
+
+        for (var i = 0 ; i < allTech.length ; i++){
+          for(var j = 0; j < allTech.length; j ++){
+            for(var k = 0; k < allTech.length; k ++){
+            if ( allTech[i] === chosenCountry[j] && variable[i] === chosenvar_2[k]) {
+                currentpat_value.push(pat_value[i]);
+                currentInv.push(allTech[i]);
+                currentFiling.push(filing[i]);
+
+          //      current_color.push(color_var[i]);
+         //       currentcountryName.push(allcountryName[i]);
+                }
+        }
+
+      }
+
+    }
+    
+};
+
+    // Default Country Data
+    setBubblePlot(["CH", "DE", "US"], ["mrna_pharma_i"]);
+
+    function setBubblePlot(chosenCountry, chosenvar_2) {
+        getCountryData(chosenCountry, chosenvar_2);
+
+        var trace1 = {
+            y: currentpat_value,
+            x: currentFiling,
+            type: 'scatter',
+            mode: 'lines',
+            transforms: [{type: 'groupby', 
+                          groups: currentInv
+            }], 
+        };
+        
+        
+
+        var data = [trace1];
+
+
+
+
+Plotly.newPlot('myDiv', data, {displayModeBar: false});
+    };
+
+var countrySelector = document.getElementById("select_1");
+var chosenvar_2 = document.getElementById("select_2");
+
+
+
+function updateCountry(){
+  var var_2l = [];
+  var var_1l = [];
+
+
+  $.each($("#select_1 option:selected" ), function() {
+  var_2l.push($(this).val());  
+  })
+  
+  $.each($("#select_2 option:selected" ), function() {
+  var_1l.push($(this).val());  
+  })
+  
+ 
+
+ 
+ setBubblePlot(var_2l, var_1l);
+}
+    
+countrySelector.addEventListener('change', updateCountry, false);
+chosenvar_2.addEventListener('change', updateCountry, false);
+
+});    
+
+</script>
+</head>
+
+
+<body>
+<div class="showcase__section" id="bubble">
+  <div id="bubbleplots">
+      <div class="plot" id="plotdiv"></div>
+      <div class="control-row">
+        <select class="selectpicker" id="select_1" name="select1" multiple="multiple" data-actions-box="true">
+        <option value="CA">Canada</option>  
+        <option value="CN">China</option>  
+        <option value="FR">France</option>
+        <option value="DE" selected>Germany</option>
+        <option value="GB">Great Britain</option>
+        <option value="IT">Italy</option>
+        <option value="JP">Japan</option>
+        <option value="KR">South Korea</option>
+        <option value="ES">Spain</option>
+        <option value="SE">Sweden</option>
+        <option value="CH" selected>Switzerland</option>  
+        <option value="US" selected>USA</option>
+        </select>
+    </div>
+  </div>
+</div>
+
+<div class="showcase__section" id="bubble">
+  <div id="bubbleplots">
+      <div class="plot" id="plotdiv"></div>
+      <div class="control-row">
+        <select class="selectpicker" id="select_2" name="select2" data-actions-box="true">
+        <option value="mrna_pharma_i" selected>mRNA to pharma</option>  
+        <option value="share_mrna_world">Share country to global</option>  
+        </select>
+    </div>
+  </div>
+</div>
+
+
+
+<div id='myDiv'></div>
+
+<!--<p id="demo"></p> -->
+
+</body>
+    
+<p><span style="font-size:0.8em"><em>Source: CIEB’s own calculations based on data from the <a href=https://www.patentsview.org target = “_blank”>USPTO</a>. The figure shows the number of inventors of the respective partner country to the total number of inventors for Swiss-based firms.</em></span></p>
+<p><br></p>
+<div class="bloc_div">
+<blockquote>
+<strong><em>19% of all inventors stated on patents developed by Swiss-based companies reside in the USA</em></strong>
+</blockquote>
+</div>
+<p><br></p>
+<div>
+<iframe id="slider" width="100%&quot;" height="400" scrolling="no" frameBorder="0" style="overflow: hidden" src="https://innoscape.de/general_stuff/teaser/mrna_teaser.html">
+</iframe>
+</div>
+<p><br class='br_desktop'></p>
+<p><span style="font-size:0.8em"><em>This article was written using <a href = https://rmarkdown.rstudio.com/ target = “_blank”>R Markdown</a>, <a href=https://shiny.rstudio.com/ target = “_blank”>R shiny</a> and <a href=https://plotly.com/javascript/ target = “_blank”>Plotly</a>. We thank Matthias Niggli for valuable feedback.</em></span></p>
+<p><br></p>
+<p><br></p>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://innoscape.de/general_stuff/style_footer.css" type="text/css" />
+
+
+&nbsp;
+<hr />
+
+<!--<p style="text-align: center;"><a href="https://cieb.unibas.ch" target='_blank' style='color:black;text-decoration: none;'>Center for International Economics and Business | CIEB | University of Basel </a>
+</p>
+-->
+
+<p style="text-align: center;">
+    Follow us on Social Media &nbsp;&nbsp;
+    <br class='br_mobile'>
+
+    <a href="https://twitter.com/cieb_unibas/" class="fa fa-twitter" style='color:black;text-decoration: none;' target='_blank'></a>
+    &nbsp;&nbsp;
+    <a href="https://www.linkedin.com/company/cieb-unibas" class="fa fa-linkedin" style='color:black;text-decoration: none;' target='_blank'></a>
+    &nbsp;&nbsp;
+    <a href="https://github.com/cieb-unibas/" class="fa fa-github" style='color:black;text-decoration: none;' target='_blank'></a>
+</p>
+
+<br>
+<br class='br_mobile'>
+
+
+
+
+
+<!-- code folding -->
+
+
+
+</body>
+</html>
