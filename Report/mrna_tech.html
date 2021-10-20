@@ -64,6 +64,7 @@
 <!-- START with text -->
 <div id="the-rise-of-mrna-technology" class="section level3">
 <h3><strong>The rise of mRNA-technology</strong></h3>
+<p><br></p>
 <p style="text-align: left; line-height: 100%;">
 <em>October 2021</em> by <a href="#" data-placement="bottom" data-toggle="tooltip"  data-html="true" title="<img src='https://innoscape.de/authors/DF_picture.jpg'><b>Dragan Filimonovic</b> is a project collaborator and research associate at the <a href='https://cieb.unibas.ch' target = “_blank”>Center for International Economics and Business | CIEB</a>. He holds a PhD in Economics from the University of Basel and is specialized in applying methods for causal inference to evaluate public policies. Dragan is passionate about working with big data and is always in pursuit of finding creative solutions to interesting economic riddles.
 <br>
@@ -85,9 +86,20 @@
  -->
 <p><img src="mrna_pic.jpg" style="width:100.0%" /></p>
 <p><br></p>
+<p><strong>The science of mRNA gained a lot of attention during the ongoing pandemic. Two mRNA vaccines have proven their efficacy against Covid-19 and for the first time in history this technology was used to battle a disease on a large scale. This important milestone could mean the beginning of a new era - the era of mRNA technology based medical treatments. The rapid development and availability of this technology is also manifested in the increasing number of patent-applications based on mRNA within the pharmaceutical sector.</strong></p>
+<p><br></p>
+<p>A closer look at the share of mRNA based patents in total pharma patents (on the world level) reveals that the applied research started to evolve rapidly only in the past several years. Hence, it is very interesting to ask which research hubs are mainly responsible for developing this (possibly) breakthrough medical treatment technology of the future.</p>
+<details>
+<summary>
+<em>Click here to get a detailed description of how we detect mRNA-patents</em>
+</summary>
+<embed src="https://drive.google.com/viewerng/
+viewer?embedded=true&url=https://innoscape.de/mRNA/MRNA_Technology.pdf" width="100%" height="600">
+</details>
+<p><br></p>
 <hr class="hr_red">
-<div id="figure-1" class="section level4">
-<h4><strong>Figure 1: </strong></h4>
+<div id="figure-1-number-of-patent-applications-in-the-field-of-mrna-is-increasing" class="section level4">
+<h4><strong>Figure 1: Number of patent applications in the field of mRNA is increasing</strong></h4>
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -154,33 +166,14 @@ Plotly.newPlot('plot_general', data, layout, {displayModeBar: false});
 
 </body>
     
-<details>
-<summary>
-<em>Click here to get a detailed description of how we detect mRNA-patents</em>
-</summary>
-<embed src="https://drive.google.com/viewerng/
-viewer?embedded=true&url=https://innoscape.de/mRNA/MRNA_Technology.pdf" width="100%" height="600">
-</details>
+<p><span style="font-size:0.8em"><em>Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>.</em></span></p>
 <p><br></p>
-</div>
-</div>
-<div id="country-level" class="section level3">
-<h3><strong>Country-level</strong></h3>
+<p>In order to check which country-level pharma eco-systems are the most active in producing mRNA technology related patents, we plot the share of mRNA based patents in the country’s total pharmaceutical patents applied at the <a href=https://www.patentsview.org target = “_blank”>USPTO</a>.</p>
 <p><br></p>
 <hr class="hr_red">
-<div id="figure-1-the-effect-of-the-partnering-country-on-the-quality-of-an-innovation" class="section level4">
-<h4><strong>Figure 1: The effect of the partnering country on the quality of an innovation</strong></h4>
-<p><br></p>
-<p><span style="font-size:0.8em"><em>Source and notes: CIEB’s own calculations based on data from the <a href = https://www.patentsview.org target = “_blank”>USPTO</a>. A positive coefficient means that partnering with the respective country is associated with innovations of better quality than solely domestic innovations. A negative coefficient means the opposite. The horizontal bar plots show the corresponding 95% confidence interval. If the lower bound is above zero, the corresponding coefficient is significantly positive at the 95% level or higher. If the upper bound is below zero, the coefficient is significantly negative at the 95% level or higher.</em></span></p>
-<p><br></p>
 </div>
-</div>
-<div id="firm" class="section level3">
-<h3><strong>Firm</strong></h3>
-<p><br></p>
-<hr class="hr_red">
-<div id="figure-2-international-locations-of-patent-inventors-of-swiss-based-firms" class="section level4">
-<h4><strong>Figure 2: International locations of patent inventors of Swiss-based firms</strong></h4>
+<div id="figure-2-germany-is-becoming-one-of-the-leading-mrna-technology-hubs" class="section level4">
+<h4><strong>Figure 2: Germany is becoming one of the leading mRNA-technology hubs</strong></h4>
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -233,7 +226,8 @@ var     allTech = unpack(rows, 'ctry_inv'),
      //           document.getElementById("demo").innerHTML = variable;
 
         for (var i = 0 ; i < allTech.length ; i++){
-          for(var j = 0; j < allTech.length; j ++){
+        
+        for(var j = 0; j < allTech.length; j ++){
             for(var k = 0; k < allTech.length; k ++){
             if ( allTech[i] === chosenCountry[j] && variable[i] === chosenvar_2[k]) {
                 currentpat_value.push(pat_value[i]);
@@ -263,12 +257,24 @@ var     allTech = unpack(rows, 'ctry_inv'),
             type: 'scatter',
             mode: 'lines',
             transforms: [{type: 'groupby', 
-                          groups: currentInv
+                          groups: currentInv,
+                          styles: [
+                          {target: 'CH', value: {marker: {color: d3.interpolateViridis(0.7)}}},
+                          {target: 'CA', value: {marker: {color: d3.interpolateViridis(0)}}},
+                          {target: 'CN', value: {marker: {color: d3.interpolateViridis(0.1)}}},
+                          {target: 'JP', value: {marker: {color: d3.interpolateViridis(0.65)}}},
+                          {target: 'KR', value: {marker: {color: d3.interpolateViridis(0.3)}}},
+                          {target: 'US', value: {marker: {color: d3.interpolateViridis(0.2)}}},
+                          {target: 'FR', value: {marker: {color: d3.interpolateViridis(0.4)}}},      
+                          {target: 'ES', value: {marker: {color: d3.interpolateViridis(0.5)}}},
+                          {target: 'DE', value: {marker: {color: d3.interpolateViridis(0.9)}}},
+                          {target: 'GB', value: {marker: {color: d3.interpolateViridis(0.8)}}},
+                          {target: 'SE', value: {marker: {color: d3.interpolateViridis(0.6)}}},      
+                          {target: 'IT', value: {marker: {color: d3.interpolateViridis(1)}}}
+                          ]
             }], 
         };
         
-        
-
         var data = [trace1];
 
 
@@ -353,22 +359,101 @@ chosenvar_2.addEventListener('change', updateCountry, false);
 
 </body>
     
-<p><span style="font-size:0.8em"><em>Source: CIEB’s own calculations based on data from the <a href=https://www.patentsview.org target = “_blank”>USPTO</a>. The figure shows the number of inventors of the respective partner country to the total number of inventors for Swiss-based firms.</em></span></p>
+<p><span style="font-size:0.8em"><em>Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>.</em></span></p>
 <p><br></p>
+<p>Three interesting conclusions may be drawn. First, the Western world drives the mRNA applied research compared to big Asian research hubs. Second, until 2014, the USA had the largest (relative) share of mRNA based patents in the world and third, since 2015, Germany’s pharmaceuticals have strongly emerged as new leaders in the field of mRNA, strongly focusing its attention to developing and patenting mRNA based technologies. Nonetheless, the USA remains the most productive mRNA patenting hub where roughly 60% of all mRNA based patents in the world are developed (see our second indicator: share of each country’s mRNA patents in the total number of mRNA patents in the world), however, Germany is rapidly catching up over the last three years.</p>
 <div class="bloc_div">
 <blockquote>
-<strong><em>19% of all inventors stated on patents developed by Swiss-based companies reside in the USA</em></strong>
+<strong><em>Germany’s pharmaceuticals have strongly emerged as new leaders in the field of mRNA</em></strong>
 </blockquote>
 </div>
+<p><br></p>
+<p>Finally, it is utterly important to identify and acknowledge the world’s leading pharmaceutical organizations in the field of mRNA technology. The following graph presents the 15 firms and universities with the largest number of filed mRNA patents in the entire world.</p>
+<p><br></p>
+<hr class="hr_red">
+</div>
+<div id="figure-3-universities-play-a-significant-role-in-mrna-patents." class="section level4">
+<h4><strong>Figure 3: Universities play a significant role in mRNA patents.</strong></h4>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.2.1/math.min.js"></script>
+  <script src= "https://d3js.org/d3.v4.min.js"></script>  
+  <script src= "https://d3js.org/d3-color.v1.min.js"></script>  
+  <script src= "https://d3js.org/d3-interpolate.v1.min.js"></script>  
+  <script src= "https://d3js.org/d3-scale-chromatic.v1.min.js"></script>  
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+<script>
+Plotly.d3.csv("https://raw.githubusercontent.com/ch54321/mrna_tech/master/firm_mrna.csv", function(err, rows){
+function unpack(rows, key) {
+        return rows.map(function(row) { return row[key]; });
+    }
+
+var     pat_value = unpack(rows, 'share'),
+        firm = unpack(rows, 'organization');
+
+
+
+var data= [{
+            y: pat_value,
+            x: firm,
+            type: 'bar',
+            marker: {
+    color: d3.interpolateViridis(0.7)}}];
+            
+ var layout = {
+          hovermode: "closest",
+          hoverlabel: { bgcolor: "#FFF" },
+          height: 500,
+          bargap: 0.2,
+           margin: {l: 70, t: 20, b: 150, r: 100},
+          showlegend: false,
+          scrollZoom: false,
+   yaxis: {fixedrange: true,
+            zeroline: false,
+            tickfont: {size: 14, width: 2},
+            title: {text: '<b>Share in total number of mRNA patent applications<br>(percentage)</b>'}}
+ };            
+            
+            
+Plotly.newPlot('plot_firm', data, layout, {displayModeBar: false});
+});    
+
+</script>
+</head>
+
+<div id='plot_firm'></div>
+
+ 
+
+</body>
+    
+<p><span style="font-size:0.8em"><em>Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>.</em></span></p>
+<p><br></p>
+<p>The most patent applications have been made by Curevac and Moderna, both appeared as vaccine developers during the Covid-19 pandemic, even though only Moderna’s ultimately met the approval criteria. It is interesting to note that Biontech, the other major Covid-19 vaccine developer, is not among the 15 largest mRNA patent applicants.</p>
+<div class="bloc_div">
+<blockquote>
+<strong><em>Universities are very active in patenting mRNA-innovations</em></strong>
+</blockquote>
+</div>
+<p>Novartis takes a very high 3th place which indicates that Swiss pharmacists possess a high scientific interest and know-how when it comes to mRNA research and development. Another very interesting observation is that universities are very active in patenting mRNA-innovations, which shows how crucial the role of academic research is for the emergence of new technologies.</p>
+<p><br></p>
+<p><span style="font-size:0.8em"><em>Source and notes: CIEB’s own calculations based on data from the <a href = https://www.patentsview.org target = “_blank”>USPTO</a>. A positive coefficient means that partnering with the respective country is associated with innovations of better quality than solely domestic innovations. A negative coefficient means the opposite. The horizontal bar plots show the corresponding 95% confidence interval. If the lower bound is above zero, the corresponding coefficient is significantly positive at the 95% level or higher. If the upper bound is below zero, the coefficient is significantly negative at the 95% level or higher.</em></span></p>
 <p><br></p>
 <div>
 <iframe id="slider" width="100%&quot;" height="400" scrolling="no" frameBorder="0" style="overflow: hidden" src="https://innoscape.de/general_stuff/teaser/mrna_teaser.html">
 </iframe>
 </div>
 <p><br class='br_desktop'></p>
-<p><span style="font-size:0.8em"><em>This article was written using <a href = https://rmarkdown.rstudio.com/ target = “_blank”>R Markdown</a>, <a href=https://shiny.rstudio.com/ target = “_blank”>R shiny</a> and <a href=https://plotly.com/javascript/ target = “_blank”>Plotly</a>. We thank Matthias Niggli for valuable feedback.</em></span></p>
-<p><br></p>
-<p><br></p>
+<p><span style="font-size:0.8em"><em>This article was written using <a href = https://rmarkdown.rstudio.com/ target = “_blank”>R Markdown</a>, <a href=https://shiny.rstudio.com/ target = “_blank”>R shiny</a> and <a href=https://plotly.com/javascript/ target = “_blank”>Plotly</a>. Detection of mRNA-patents were performed at <a href = http://scicore.unibas.ch/ target = “_blank”> sciCORE </a> scientific computing center at the University of Basel. We thank Matthias Niggli for valuable feedback.</em></span></p>
+<p><br> <br></p>
 <script>
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();   

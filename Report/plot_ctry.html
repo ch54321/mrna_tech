@@ -51,7 +51,8 @@ var     allTech = unpack(rows, 'ctry_inv'),
      //           document.getElementById("demo").innerHTML = variable;
 
         for (var i = 0 ; i < allTech.length ; i++){
-          for(var j = 0; j < allTech.length; j ++){
+        
+        for(var j = 0; j < allTech.length; j ++){
             for(var k = 0; k < allTech.length; k ++){
             if ( allTech[i] === chosenCountry[j] && variable[i] === chosenvar_2[k]) {
                 currentpat_value.push(pat_value[i]);
@@ -84,12 +85,24 @@ var     allTech = unpack(rows, 'ctry_inv'),
             type: 'scatter',
             mode: 'lines',
             transforms: [{type: 'groupby', 
-                          groups: currentInv
+                          groups: currentInv,
+                          styles: [
+                          {target: 'CH', value: {marker: {color: d3.interpolateViridis(0.7)}}},
+                          {target: 'CA', value: {marker: {color: d3.interpolateViridis(0)}}},
+                          {target: 'CN', value: {marker: {color: d3.interpolateViridis(0.1)}}},
+                          {target: 'JP', value: {marker: {color: d3.interpolateViridis(0.65)}}},
+                          {target: 'KR', value: {marker: {color: d3.interpolateViridis(0.3)}}},
+                          {target: 'US', value: {marker: {color: d3.interpolateViridis(0.2)}}},
+                          {target: 'FR', value: {marker: {color: d3.interpolateViridis(0.4)}}},      
+                          {target: 'ES', value: {marker: {color: d3.interpolateViridis(0.5)}}},
+                          {target: 'DE', value: {marker: {color: d3.interpolateViridis(0.9)}}},
+                          {target: 'GB', value: {marker: {color: d3.interpolateViridis(0.8)}}},
+                          {target: 'SE', value: {marker: {color: d3.interpolateViridis(0.6)}}},      
+                          {target: 'IT', value: {marker: {color: d3.interpolateViridis(1)}}}
+                          ]
             }], 
         };
         
-        
-
         var data = [trace1];
 
 

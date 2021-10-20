@@ -26,12 +26,12 @@ output:
 <meta property='og:image' content='https://innoscape.de/internat_collab/title_new.jpg'/>
 <meta property='og:description' content='As part of our #Innoscape Project, we investigate how partnering with different locations affects the quality of innovations. In short, collaborating with research sites in the USA and Great Britain has the greatest effect on the quality of innovation.'/>
 <meta property='og:url' content='https://innoscape.ch/en/publications/international-rd'/>
-
 </head>
 <!-- START with text -->
 
 ### **The rise of mRNA-technology**
 
+<br>
 
 <p style="text-align: left; line-height: 100%;">
 *October 2021* by <a href="#" data-placement="bottom" data-toggle="tooltip"  data-html="true" title="<img src='https://innoscape.de/authors/DF_picture.jpg'><b>Dragan Filimonovic</b> is a project collaborator and research associate at the <a href='https://cieb.unibas.ch' target = “_blank”>Center for International Economics and Business | CIEB</a>. He holds a PhD in Economics from the University of Basel and is specialized in applying methods for causal inference to evaluate public policies. Dragan is passionate about working with big data and is always in pursuit of finding creative solutions to interesting economic riddles.
@@ -60,13 +60,11 @@ output:
 
 <br>
 
+**The science of mRNA gained a lot of attention during the ongoing pandemic. Two mRNA vaccines have proven their efficacy against Covid-19 and for the first time in history this technology was used to battle a disease on a large scale. This important milestone could mean the beginning of a new era - the era of mRNA technology based medical treatments. The rapid development and availability of this technology is also manifested in the increasing number of patent-applications based on mRNA within the pharmaceutical sector.** 
 
-<hr class="hr_red">
-#### **Figure 1: **
-```{r, echo=FALSE}
-htmltools::includeHTML("plot_general.html")
-```
+<br>
 
+A closer look at the share of mRNA based patents in total pharma patents (on the world level) reveals that the applied research started to evolve rapidly only in the past several years. Hence, it is very interesting to ask which research hubs are mainly responsible for developing this (possibly) breakthrough medical treatment technology of the future. 
 
 
 <details>
@@ -77,51 +75,62 @@ viewer?embedded=true&url=https://innoscape.de/mRNA/MRNA_Technology.pdf" width="1
 
 <br>
 
-### **Country-level**
+<hr class="hr_red">
+#### **Figure 1: Number of patent applications in the field of mRNA is increasing**
+```{r, echo=FALSE}
+htmltools::includeHTML("plot_general.html")
+```
+<span style="font-size:0.8em">*Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>.*</span>
 
+<br>
 
+In order to check which country-level pharma eco-systems are the most active in producing mRNA technology related patents, we plot the share of mRNA based patents in the country’s total pharmaceutical patents applied at the <a href=https://www.patentsview.org target = “_blank”>USPTO</a>. 
 
 <br>
 
 <hr class="hr_red">
-#### **Figure 1: The effect of the partnering country on the quality of an innovation**
+#### **Figure 2: Germany is becoming one of the leading mRNA-technology hubs**
 ```{r, echo=FALSE}
+htmltools::includeHTML("plot_ctry.html")
 ```
+<span style="font-size:0.8em">*Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>.*</span>
 
+<br>
+
+Three interesting conclusions may be drawn. First, the Western world drives the mRNA applied research compared to big Asian research hubs. Second, until 2014, the USA had the largest (relative) share of mRNA based patents in the world and third, since 2015, Germany’s pharmaceuticals have strongly emerged as new leaders in the field of mRNA, strongly focusing its attention to developing and patenting mRNA based technologies. Nonetheless, the USA remains the most productive mRNA patenting hub where roughly 60% of all mRNA based patents in the world are developed (see our second indicator: share of each country’s mRNA patents in the total number of mRNA patents in the world), however, Germany is rapidly catching up over the last three years.  
+
+<div class=bloc_div>
+<blockquote>***Germany’s pharmaceuticals have strongly emerged as new leaders in the field of mRNA***</blockquote>
+</div>
+
+<br>
+
+Finally, it is utterly important to identify and acknowledge the world’s leading pharmaceutical organizations in the field of mRNA technology. The following graph presents the 15 firms and universities with the largest number of filed mRNA patents in the entire world. 
+
+<br>
+
+<hr class="hr_red">
+#### **Figure 3: Universities play a significant role in mRNA patents.**
+```{r, echo=FALSE}
+htmltools::includeHTML("plot_firm.html")
+```
+<span style="font-size:0.8em">*Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>.*</span>
+
+<br>
+
+The most patent applications have been made by Curevac and Moderna, both appeared as vaccine developers during the Covid-19 pandemic, even though only Moderna's ultimately met the approval criteria. It is interesting to note that Biontech, the other major Covid-19 vaccine developer, is not among the 15 largest mRNA patent applicants. 
+
+<div class=bloc_div>
+<blockquote>***Universities are very active in patenting mRNA-innovations***</blockquote>
+</div>
+
+Novartis takes a very high 3th place which indicates that Swiss pharmacists possess a high scientific interest and know-how when it comes to mRNA research and development. Another very interesting observation is that universities are very active in patenting mRNA-innovations, which shows how crucial the role of academic research is for the emergence of new technologies.  
 
 <br>
 
 <span style="font-size:0.8em">*Source and notes: CIEB’s own calculations based on data from the <a href = https://www.patentsview.org target = “_blank”>USPTO</a>. A positive coefficient means that partnering with the respective country is associated with innovations of better quality than solely domestic innovations. A negative coefficient means the opposite. The horizontal bar plots show the corresponding 95% confidence interval. If the lower bound is above zero, the corresponding coefficient is significantly positive at the 95% level or higher. If the upper bound is below zero, the coefficient is significantly negative at the 95% level or higher.*</span>
 
 <br>
-
-
-          
-### **Firm**
-
-
-
-<br>
-
-<hr class="hr_red">
-#### **Figure 2: International locations of patent inventors of Swiss-based firms**
-```{r, echo=FALSE}
-htmltools::includeHTML("plot_ctry.html")
-```
-<span style="font-size:0.8em">*Source: CIEB’s own calculations based on data from the <a href=https://www.patentsview.org target = “_blank”>USPTO</a>. The figure shows the number of inventors of the respective partner country to the total number of inventors for Swiss-based firms.*</span>
-
-<br>
-
-
-<div class=bloc_div>
-<blockquote>***19% of all inventors stated on patents developed by Swiss-based companies reside in the USA***</blockquote>
-</div>
-
-
-
-
-<br>
-
 
 <div>
 <iframe id="slider" width=100%" height="400" scrolling="no" frameBorder="0" style="overflow: hidden" src="https://innoscape.de/general_stuff/teaser/mrna_teaser.html">
@@ -131,10 +140,9 @@ htmltools::includeHTML("plot_ctry.html")
 
 <br class='br_desktop'>
 
-<span style="font-size:0.8em">*This article was written using <a href = https://rmarkdown.rstudio.com/ target = “_blank”>R Markdown</a>, <a href=https://shiny.rstudio.com/ target = “_blank”>R shiny</a> and <a href=https://plotly.com/javascript/ target = “_blank”>Plotly</a>. We thank Matthias Niggli for valuable feedback.*</span>
+<span style="font-size:0.8em">*This article was written using <a href = https://rmarkdown.rstudio.com/ target = “_blank”>R Markdown</a>, <a href=https://shiny.rstudio.com/ target = “_blank”>R shiny</a> and <a href=https://plotly.com/javascript/ target = “_blank”>Plotly</a>. Detection of mRNA-patents were performed at <a href = http://scicore.unibas.ch/ target = “_blank”> sciCORE </a> scientific computing center at the University of Basel. We thank Matthias Niggli for valuable feedback.*</span>
 
 <br>
-
 <br>
 
 <script>
