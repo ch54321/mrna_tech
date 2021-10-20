@@ -90,9 +90,10 @@ In order to check which country-level pharma eco-systems are the most active in 
 
 <hr class="hr_red">
 #### **Figure 2: Germany is becoming one of the leading mRNA-technology hubs**
-```{r, echo=FALSE}
-htmltools::includeHTML("plot_ctry.html")
-```
+
+<iframe width="100%" height="480" scrolling="no" frameBorder="0" style="overflow: hidden" src="https://innoscape.de/mRNA/plot_ctry.html" id="geo_plot">
+<p>Your browser does not support iframes</p>
+</iframe>
 <span style="font-size:0.8em">*Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>.*</span>
 
 <br>
