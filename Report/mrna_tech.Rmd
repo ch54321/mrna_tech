@@ -119,7 +119,7 @@ htmltools::includeHTML("plot_firm.html")
 
 <br>
 
-The most patent applications have been made by Curevac and Moderna, both appeared as vaccine developers during the Covid-19 pandemic, even though only Moderna's ultimately met the approval criteria. It is interesting to note that Biontech, the other major Covid-19 vaccine developer, is not among the 15 largest mRNA patent applicants. 
+The most patent applications have been made by Curevac and Moderna, both appeared as vaccine developers during the Covid-19 pandemic, even though only Moderna's ultimately met the approval criteria. 
 
 <div class=bloc_div>
 <blockquote>***Universities are very active in patenting mRNA-innovations***</blockquote>
