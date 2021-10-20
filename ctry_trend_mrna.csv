@@ -1,265 +1,217 @@
-"","filing","ctry_inv","variable","value"
-"1",2010,"CA","share_mrna_world",0.0371389270976616
-"2",2010,"DE","share_mrna_world",0.0694635488308116
-"3",2010,"US","share_mrna_world",0.562585969738652
-"4",2010,"CH","share_mrna_world",0.0213204951856946
-"5",2010,"CN","share_mrna_world",0.0240715268225585
-"6",2010,"ES","share_mrna_world",0.0123796423658872
-"7",2010,"FR","share_mrna_world",0.0337001375515818
-"8",2010,"GB","share_mrna_world",0.0302613480055021
-"9",2010,"IT","share_mrna_world",0.0123796423658872
-"10",2010,"JP","share_mrna_world",0.0343878954607978
-"11",2010,"KR","share_mrna_world",0.015130674002751
-"12",2010,"SE","share_mrna_world",0.0144429160935351
-"13",2011,"CA","share_mrna_world",0.0264084507042254
-"14",2011,"DE","share_mrna_world",0.0713028169014085
-"15",2011,"US","share_mrna_world",0.586267605633803
-"16",2011,"CH","share_mrna_world",0.0290492957746479
-"17",2011,"CN","share_mrna_world",0.0255281690140845
-"18",2011,"ES","share_mrna_world",0.00616197183098592
-"19",2011,"FR","share_mrna_world",0.0448943661971831
-"20",2011,"GB","share_mrna_world",0.0211267605633803
-"21",2011,"IT","share_mrna_world",0.00616197183098592
-"22",2011,"JP","share_mrna_world",0.0378521126760563
-"23",2011,"KR","share_mrna_world",0.022887323943662
-"24",2011,"SE","share_mrna_world",0.00440140845070423
-"25",2012,"CA","share_mrna_world",0.0385395537525355
-"26",2012,"DE","share_mrna_world",0.0709939148073022
-"27",2012,"US","share_mrna_world",0.589249492900609
-"28",2012,"CH","share_mrna_world",0.0192697768762677
-"29",2012,"CN","share_mrna_world",0.0152129817444219
-"30",2012,"ES","share_mrna_world",0.00811359026369168
-"31",2012,"FR","share_mrna_world",0.0304259634888438
-"32",2012,"GB","share_mrna_world",0.0273833671399594
-"33",2012,"IT","share_mrna_world",0.0121703853955375
-"34",2012,"JP","share_mrna_world",0.0466531440162272
-"35",2012,"KR","share_mrna_world",0.0223123732251521
-"36",2012,"SE","share_mrna_world",0.00608519269776876
-"37",2013,"DE","share_mrna_world",0.0608974358974359
-"38",2013,"FR","share_mrna_world",0.0352564102564103
-"39",2013,"US","share_mrna_world",0.602564102564103
-"40",2013,"CA","share_mrna_world",0.0352564102564103
-"41",2013,"CH","share_mrna_world",0.0170940170940171
-"42",2013,"CN","share_mrna_world",0.0181623931623932
-"43",2013,"ES","share_mrna_world",0.00961538461538462
-"44",2013,"GB","share_mrna_world",0.0299145299145299
-"45",2013,"IT","share_mrna_world",0.00641025641025641
-"46",2013,"JP","share_mrna_world",0.030982905982906
-"47",2013,"KR","share_mrna_world",0.0224358974358974
-"48",2013,"SE","share_mrna_world",0.00961538461538462
-"49",2014,"DE","share_mrna_world",0.0483711747285291
-"50",2014,"US","share_mrna_world",0.602171767028628
-"51",2014,"CA","share_mrna_world",0.0365251727541955
-"52",2014,"CH","share_mrna_world",0.0177690029615005
-"53",2014,"CN","share_mrna_world",0.0227048371174729
-"54",2014,"ES","share_mrna_world",0.0138203356367226
-"55",2014,"FR","share_mrna_world",0.035538005923001
-"56",2014,"GB","share_mrna_world",0.0217176702862784
-"57",2014,"IT","share_mrna_world",0.00888450148075025
-"58",2014,"JP","share_mrna_world",0.0296150049358342
-"59",2014,"KR","share_mrna_world",0.0266535044422507
-"60",2014,"SE","share_mrna_world",0.00493583415597236
-"61",2015,"CH","share_mrna_world",0.0204918032786885
-"62",2015,"DE","share_mrna_world",0.0672131147540984
-"63",2015,"US","share_mrna_world",0.595901639344262
-"64",2015,"CA","share_mrna_world",0.0426229508196721
-"65",2015,"CN","share_mrna_world",0.0139344262295082
-"66",2015,"ES","share_mrna_world",0.00819672131147541
-"67",2015,"FR","share_mrna_world",0.0319672131147541
-"68",2015,"GB","share_mrna_world",0.0262295081967213
-"69",2015,"IT","share_mrna_world",0.00983606557377049
-"70",2015,"JP","share_mrna_world",0.0311475409836066
-"71",2015,"KR","share_mrna_world",0.0188524590163934
-"72",2015,"SE","share_mrna_world",0.00655737704918033
-"73",2016,"US","share_mrna_world",0.613749114103473
-"74",2016,"CH","share_mrna_world",0.0233876683203402
-"75",2016,"DE","share_mrna_world",0.0921332388377038
-"76",2016,"CA","share_mrna_world",0.033309709425939
-"77",2016,"CN","share_mrna_world",0.0141743444365698
-"78",2016,"ES","share_mrna_world",0.00850460666194188
-"79",2016,"FR","share_mrna_world",0.0297661233167966
-"80",2016,"GB","share_mrna_world",0.0198440822111977
-"81",2016,"IT","share_mrna_world",0.0120481927710843
-"82",2016,"JP","share_mrna_world",0.0212615166548547
-"83",2016,"KR","share_mrna_world",0.0233876683203402
-"84",2016,"SE","share_mrna_world",0.00212615166548547
-"85",2017,"CH","share_mrna_world",0.0202501488981537
-"86",2017,"US","share_mrna_world",0.597379392495533
-"87",2017,"CA","share_mrna_world",0.0297796307325789
-"88",2017,"CN","share_mrna_world",0.0357355568790947
-"89",2017,"DE","share_mrna_world",0.0678975580702799
-"90",2017,"ES","share_mrna_world",0.0083382966051221
-"91",2017,"FR","share_mrna_world",0.0285884455032758
-"92",2017,"GB","share_mrna_world",0.0345443716497915
-"93",2017,"IT","share_mrna_world",0.00774270399047052
-"94",2017,"JP","share_mrna_world",0.0214413341274568
-"95",2017,"KR","share_mrna_world",0.0196545562835021
-"96",2017,"SE","share_mrna_world",0.0119118522930316
-"97",2018,"CH","share_mrna_world",0.0114481969089868
-"98",2018,"SE","share_mrna_world",0.00629650829994276
-"99",2018,"US","share_mrna_world",0.613050944476245
-"100",2018,"CA","share_mrna_world",0.020034344590727
-"101",2018,"CN","share_mrna_world",0.0171722953634803
-"102",2018,"DE","share_mrna_world",0.12192329708071
-"103",2018,"ES","share_mrna_world",0.00572409845449342
-"104",2018,"FR","share_mrna_world",0.0223239839725243
-"105",2018,"GB","share_mrna_world",0.0257584430452204
-"106",2018,"IT","share_mrna_world",0.00629650829994276
-"107",2018,"JP","share_mrna_world",0.0171722953634803
-"108",2018,"KR","share_mrna_world",0.0211791642816256
-"109",2019,"US","share_mrna_world",0.604881769641495
-"110",2019,"CA","share_mrna_world",0.0144927536231884
-"111",2019,"CH","share_mrna_world",0.0122044241037376
-"112",2019,"CN","share_mrna_world",0.0160183066361556
-"113",2019,"DE","share_mrna_world",0.145690312738368
-"114",2019,"ES","share_mrna_world",0.0053394355453852
-"115",2019,"FR","share_mrna_world",0.0175438596491228
-"116",2019,"GB","share_mrna_world",0.0289855072463768
-"117",2019,"IT","share_mrna_world",0.0030511060259344
-"118",2019,"JP","share_mrna_world",0.01906941266209
-"119",2019,"KR","share_mrna_world",0.0167810831426392
-"120",2019,"SE","share_mrna_world",0.0030511060259344
-"121",2020,"CN","share_mrna_world",0.0249739854318418
-"122",2020,"US","share_mrna_world",0.575442247658689
-"123",2020,"CA","share_mrna_world",0.0135275754422477
-"124",2020,"CH","share_mrna_world",0.0124869927159209
-"125",2020,"DE","share_mrna_world",0.1789802289282
-"126",2020,"FR","share_mrna_world",0.0249739854318418
-"127",2020,"GB","share_mrna_world",0.0260145681581686
-"128",2020,"IT","share_mrna_world",0.0072840790842872
-"129",2020,"JP","share_mrna_world",0.00832466181061394
-"130",2020,"KR","share_mrna_world",0.00832466181061394
-"131",2020,"SE","share_mrna_world",0.00312174817898023
-"132",2020,"ES","share_mrna_world",0.00416233090530697
-"133",2010,"CA","mrna_pharma_i",0.0907563025210084
-"134",2010,"DE","mrna_pharma_i",0.0775729646697389
-"135",2010,"US","mrna_pharma_i",0.0848283729129939
-"136",2010,"CH","mrna_pharma_i",0.0573012939001848
-"137",2010,"CN","mrna_pharma_i",0.098314606741573
-"138",2010,"ES","mrna_pharma_i",0.0782608695652174
-"139",2010,"FR","mrna_pharma_i",0.0484668644906034
-"140",2010,"GB","mrna_pharma_i",0.0487804878048781
-"141",2010,"IT","mrna_pharma_i",0.0514285714285714
-"142",2010,"JP","mrna_pharma_i",0.047438330170778
-"143",2010,"KR","mrna_pharma_i",0.0662650602409639
-"144",2010,"SE","mrna_pharma_i",0.0792452830188679
-"145",2011,"CA","mrna_pharma_i",0.0663716814159292
-"146",2011,"DE","mrna_pharma_i",0.073038773669973
-"147",2011,"US","mrna_pharma_i",0.0751608170635368
-"148",2011,"CH","mrna_pharma_i",0.0680412371134021
-"149",2011,"CN","mrna_pharma_i",0.0870870870870871
-"150",2011,"ES","mrna_pharma_i",0.0368421052631579
-"151",2011,"FR","mrna_pharma_i",0.0683646112600536
-"152",2011,"GB","mrna_pharma_i",0.0343839541547278
-"153",2011,"IT","mrna_pharma_i",0.0196078431372549
-"154",2011,"JP","mrna_pharma_i",0.0504103165298945
-"155",2011,"KR","mrna_pharma_i",0.0838709677419355
-"156",2011,"SE","mrna_pharma_i",0.027027027027027
-"157",2012,"CA","mrna_pharma_i",0.0791666666666667
-"158",2012,"DE","mrna_pharma_i",0.0624442462087422
-"159",2012,"US","mrna_pharma_i",0.0682886694875411
-"160",2012,"CH","mrna_pharma_i",0.0386178861788618
-"161",2012,"CN","mrna_pharma_i",0.046875
-"162",2012,"ES","mrna_pharma_i",0.0547945205479452
-"163",2012,"FR","mrna_pharma_i",0.0404312668463612
-"164",2012,"GB","mrna_pharma_i",0.0371900826446281
-"165",2012,"IT","mrna_pharma_i",0.0378548895899054
-"166",2012,"JP","mrna_pharma_i",0.0610889774236388
-"167",2012,"KR","mrna_pharma_i",0.063953488372093
-"168",2012,"SE","mrna_pharma_i",0.0337078651685393
-"169",2013,"DE","mrna_pharma_i",0.0590673575129534
-"170",2013,"FR","mrna_pharma_i",0.0516431924882629
-"171",2013,"US","mrna_pharma_i",0.0712121212121212
-"172",2013,"CA","mrna_pharma_i",0.0774647887323944
-"173",2013,"CH","mrna_pharma_i",0.0338266384778013
-"174",2013,"CN","mrna_pharma_i",0.053125
-"175",2013,"ES","mrna_pharma_i",0.0629370629370629
-"176",2013,"GB","mrna_pharma_i",0.0495575221238938
-"177",2013,"IT","mrna_pharma_i",0.019672131147541
-"178",2013,"JP","mrna_pharma_i",0.042962962962963
-"179",2013,"KR","mrna_pharma_i",0.0658307210031348
-"180",2013,"SE","mrna_pharma_i",0.0529411764705882
-"181",2014,"DE","mrna_pharma_i",0.0561282932416953
-"182",2014,"US","mrna_pharma_i",0.0704794916233391
-"183",2014,"CA","mrna_pharma_i",0.0822222222222222
-"184",2014,"CH","mrna_pharma_i",0.0435835351089588
-"185",2014,"CN","mrna_pharma_i",0.0606860158311346
-"186",2014,"ES","mrna_pharma_i",0.0853658536585366
-"187",2014,"FR","mrna_pharma_i",0.0575079872204473
-"188",2014,"GB","mrna_pharma_i",0.0355987055016181
-"189",2014,"IT","mrna_pharma_i",0.0296052631578947
-"190",2014,"JP","mrna_pharma_i",0.0432900432900433
-"191",2014,"KR","mrna_pharma_i",0.0743801652892562
-"192",2014,"SE","mrna_pharma_i",0.032051282051282
-"193",2015,"CH","mrna_pharma_i",0.0625
-"194",2015,"DE","mrna_pharma_i",0.0925507900677201
-"195",2015,"US","mrna_pharma_i",0.0782393456736978
-"196",2015,"CA","mrna_pharma_i",0.104627766599598
-"197",2015,"CN","mrna_pharma_i",0.0351239669421488
-"198",2015,"ES","mrna_pharma_i",0.0531914893617021
-"199",2015,"FR","mrna_pharma_i",0.061128526645768
-"200",2015,"GB","mrna_pharma_i",0.043360433604336
-"201",2015,"IT","mrna_pharma_i",0.036036036036036
-"202",2015,"JP","mrna_pharma_i",0.0465116279069767
-"203",2015,"KR","mrna_pharma_i",0.0566502463054187
-"204",2015,"SE","mrna_pharma_i",0.041025641025641
-"205",2016,"US","mrna_pharma_i",0.0848520478150108
-"206",2016,"CH","mrna_pharma_i",0.0652173913043478
-"207",2016,"DE","mrna_pharma_i",0.127576054955839
-"208",2016,"CA","mrna_pharma_i",0.0856102003642987
-"209",2016,"CN","mrna_pharma_i",0.033112582781457
-"210",2016,"ES","mrna_pharma_i",0.0718562874251497
-"211",2016,"FR","mrna_pharma_i",0.061493411420205
-"212",2016,"GB","mrna_pharma_i",0.0367936925098555
-"213",2016,"IT","mrna_pharma_i",0.0529595015576324
-"214",2016,"JP","mrna_pharma_i",0.0347624565469293
-"215",2016,"KR","mrna_pharma_i",0.0642023346303502
-"216",2016,"SE","mrna_pharma_i",0.0140845070422535
-"217",2017,"CH","mrna_pharma_i",0.0726495726495727
-"218",2017,"US","mrna_pharma_i",0.090752804922186
-"219",2017,"CA","mrna_pharma_i",0.102459016393443
-"220",2017,"CN","mrna_pharma_i",0.0852272727272727
-"221",2017,"DE","mrna_pharma_i",0.120890774125133
-"222",2017,"ES","mrna_pharma_i",0.0760869565217391
-"223",2017,"FR","mrna_pharma_i",0.0755905511811024
-"224",2017,"GB","mrna_pharma_i",0.0713407134071341
-"225",2017,"IT","mrna_pharma_i",0.0408805031446541
-"226",2017,"JP","mrna_pharma_i",0.0408163265306122
-"227",2017,"KR","mrna_pharma_i",0.0613382899628253
-"228",2017,"SE","mrna_pharma_i",0.0826446280991736
-"229",2018,"CH","mrna_pharma_i",0.0397614314115308
-"230",2018,"SE","mrna_pharma_i",0.0488888888888889
-"231",2018,"US","mrna_pharma_i",0.0978171522513472
-"232",2018,"CA","mrna_pharma_i",0.0629496402877698
-"233",2018,"CN","mrna_pharma_i",0.0478468899521531
-"234",2018,"DE","mrna_pharma_i",0.220725388601036
-"235",2018,"ES","mrna_pharma_i",0.072992700729927
-"236",2018,"FR","mrna_pharma_i",0.0571847507331378
-"237",2018,"GB","mrna_pharma_i",0.0568181818181818
-"238",2018,"IT","mrna_pharma_i",0.0353697749196141
-"239",2018,"JP","mrna_pharma_i",0.0341296928327645
-"240",2018,"KR","mrna_pharma_i",0.0683918669131238
-"241",2019,"US","mrna_pharma_i",0.0882287494437027
-"242",2019,"CA","mrna_pharma_i",0.0466830466830467
-"243",2019,"CH","mrna_pharma_i",0.049079754601227
-"244",2019,"CN","mrna_pharma_i",0.0427698574338086
-"245",2019,"DE","mrna_pharma_i",0.256720430107527
-"246",2019,"ES","mrna_pharma_i",0.0679611650485437
-"247",2019,"FR","mrna_pharma_i",0.0588235294117647
-"248",2019,"GB","mrna_pharma_i",0.0698529411764706
-"249",2019,"IT","mrna_pharma_i",0.0198019801980198
-"250",2019,"JP","mrna_pharma_i",0.0445632798573975
-"251",2019,"KR","mrna_pharma_i",0.0658682634730539
-"252",2019,"SE","mrna_pharma_i",0.032520325203252
-"253",2020,"CN","mrna_pharma_i",0.0729483282674772
-"254",2020,"US","mrna_pharma_i",0.0869633590187136
-"255",2020,"CA","mrna_pharma_i",0.0541666666666667
-"256",2020,"CH","mrna_pharma_i",0.0466926070038911
-"257",2020,"DE","mrna_pharma_i",0.325757575757576
-"258",2020,"FR","mrna_pharma_i",0.0888888888888889
-"259",2020,"GB","mrna_pharma_i",0.0576036866359447
-"260",2020,"IT","mrna_pharma_i",0.0538461538461538
-"261",2020,"JP","mrna_pharma_i",0.0243161094224924
-"262",2020,"KR","mrna_pharma_i",0.0406091370558376
-"263",2020,"SE","mrna_pharma_i",0.0283018867924528
-"264",2020,"ES","mrna_pharma_i",0.0701754385964912
+"","filing","ctry_inv","variable","value","ctry_name"
+"1",2012,"CA","share_mrna_world",0.0385395537525355,"Canada"
+"2",2012,"DE","share_mrna_world",0.0709939148073022,"Germany"
+"3",2012,"US","share_mrna_world",0.589249492900609,"United States"
+"4",2012,"CH","share_mrna_world",0.0192697768762677,"Switzerland"
+"5",2012,"CN","share_mrna_world",0.0152129817444219,"China"
+"6",2012,"ES","share_mrna_world",0.00811359026369168,"Spain"
+"7",2012,"FR","share_mrna_world",0.0304259634888438,"France"
+"8",2012,"GB","share_mrna_world",0.0273833671399594,"United Kingdom"
+"9",2012,"IT","share_mrna_world",0.0121703853955375,"Italy"
+"10",2012,"JP","share_mrna_world",0.0466531440162272,"Japan"
+"11",2012,"KR","share_mrna_world",0.0223123732251521,"South Korea"
+"12",2012,"SE","share_mrna_world",0.00608519269776876,"Sweden"
+"13",2013,"DE","share_mrna_world",0.0608974358974359,"Germany"
+"14",2013,"FR","share_mrna_world",0.0352564102564103,"France"
+"15",2013,"US","share_mrna_world",0.602564102564103,"United States"
+"16",2013,"CA","share_mrna_world",0.0352564102564103,"Canada"
+"17",2013,"CH","share_mrna_world",0.0170940170940171,"Switzerland"
+"18",2013,"CN","share_mrna_world",0.0181623931623932,"China"
+"19",2013,"ES","share_mrna_world",0.00961538461538462,"Spain"
+"20",2013,"GB","share_mrna_world",0.0299145299145299,"United Kingdom"
+"21",2013,"IT","share_mrna_world",0.00641025641025641,"Italy"
+"22",2013,"JP","share_mrna_world",0.030982905982906,"Japan"
+"23",2013,"KR","share_mrna_world",0.0224358974358974,"South Korea"
+"24",2013,"SE","share_mrna_world",0.00961538461538462,"Sweden"
+"25",2014,"DE","share_mrna_world",0.0482283464566929,"Germany"
+"26",2014,"US","share_mrna_world",0.601377952755906,"United States"
+"27",2014,"CA","share_mrna_world",0.0364173228346457,"Canada"
+"28",2014,"CH","share_mrna_world",0.0177165354330709,"Switzerland"
+"29",2014,"CN","share_mrna_world",0.0226377952755906,"China"
+"30",2014,"ES","share_mrna_world",0.0137795275590551,"Spain"
+"31",2014,"FR","share_mrna_world",0.0364173228346457,"France"
+"32",2014,"GB","share_mrna_world",0.0216535433070866,"United Kingdom"
+"33",2014,"IT","share_mrna_world",0.00885826771653543,"Italy"
+"34",2014,"JP","share_mrna_world",0.0295275590551181,"Japan"
+"35",2014,"KR","share_mrna_world",0.0275590551181102,"South Korea"
+"36",2014,"SE","share_mrna_world",0.00492125984251968,"Sweden"
+"37",2015,"CH","share_mrna_world",0.0204081632653061,"Switzerland"
+"38",2015,"DE","share_mrna_world",0.0677551020408163,"Germany"
+"39",2015,"US","share_mrna_world",0.594285714285714,"United States"
+"40",2015,"CA","share_mrna_world",0.0424489795918367,"Canada"
+"41",2015,"CN","share_mrna_world",0.0146938775510204,"China"
+"42",2015,"ES","share_mrna_world",0.00816326530612245,"Spain"
+"43",2015,"FR","share_mrna_world",0.0318367346938776,"France"
+"44",2015,"GB","share_mrna_world",0.0261224489795918,"United Kingdom"
+"45",2015,"IT","share_mrna_world",0.00979591836734694,"Italy"
+"46",2015,"JP","share_mrna_world",0.0310204081632653,"Japan"
+"47",2015,"KR","share_mrna_world",0.0204081632653061,"South Korea"
+"48",2015,"SE","share_mrna_world",0.00653061224489796,"Sweden"
+"49",2016,"US","share_mrna_world",0.611828687967369,"United States"
+"50",2016,"CH","share_mrna_world",0.0224337185588035,"Switzerland"
+"51",2016,"DE","share_mrna_world",0.0897348742352141,"Germany"
+"52",2016,"CA","share_mrna_world",0.0326308633582597,"Canada"
+"53",2016,"CN","share_mrna_world",0.0169952413324269,"China"
+"54",2016,"ES","share_mrna_world",0.00951733514615908,"Spain"
+"55",2016,"FR","share_mrna_world",0.0305914343983685,"France"
+"56",2016,"GB","share_mrna_world",0.0197144799456152,"United Kingdom"
+"57",2016,"IT","share_mrna_world",0.0115567641060503,"Italy"
+"58",2016,"JP","share_mrna_world",0.0244731475186948,"Japan"
+"59",2016,"KR","share_mrna_world",0.0237933378653977,"South Korea"
+"60",2016,"SE","share_mrna_world",0.00271923861318831,"Sweden"
+"61",2017,"CH","share_mrna_world",0.0197963800904977,"Switzerland"
+"62",2017,"US","share_mrna_world",0.596153846153846,"United States"
+"63",2017,"CA","share_mrna_world",0.0288461538461538,"Canada"
+"64",2017,"CN","share_mrna_world",0.0350678733031674,"China"
+"65",2017,"DE","share_mrna_world",0.0684389140271493,"Germany"
+"66",2017,"ES","share_mrna_world",0.00791855203619909,"Spain"
+"67",2017,"FR","share_mrna_world",0.0282805429864253,"France"
+"68",2017,"GB","share_mrna_world",0.0345022624434389,"United Kingdom"
+"69",2017,"IT","share_mrna_world",0.00791855203619909,"Italy"
+"70",2017,"JP","share_mrna_world",0.0220588235294118,"Japan"
+"71",2017,"KR","share_mrna_world",0.0197963800904977,"South Korea"
+"72",2017,"SE","share_mrna_world",0.0124434389140271,"Sweden"
+"73",2018,"CH","share_mrna_world",0.0130151843817787,"Switzerland"
+"74",2018,"SE","share_mrna_world",0.00759219088937093,"Sweden"
+"75",2018,"US","share_mrna_world",0.61117136659436,"United States"
+"76",2018,"CA","share_mrna_world",0.0195227765726681,"Canada"
+"77",2018,"CN","share_mrna_world",0.0195227765726681,"China"
+"78",2018,"DE","share_mrna_world",0.119848156182213,"Germany"
+"79",2018,"ES","share_mrna_world",0.00542299349240781,"Spain"
+"80",2018,"FR","share_mrna_world",0.0211496746203905,"France"
+"81",2018,"GB","share_mrna_world",0.0254880694143167,"United Kingdom"
+"82",2018,"IT","share_mrna_world",0.00596529284164859,"Italy"
+"83",2018,"JP","share_mrna_world",0.0184381778741865,"Japan"
+"84",2018,"KR","share_mrna_world",0.0238611713665944,"South Korea"
+"85",2019,"US","share_mrna_world",0.603815113719736,"United States"
+"86",2019,"CA","share_mrna_world",0.0146735143066764,"Canada"
+"87",2019,"CH","share_mrna_world",0.012472487160675,"Switzerland"
+"88",2019,"CN","share_mrna_world",0.0168745414526779,"China"
+"89",2019,"DE","share_mrna_world",0.140865737344094,"Germany"
+"90",2019,"ES","share_mrna_world",0.00513573000733676,"Spain"
+"91",2019,"FR","share_mrna_world",0.0190755685986794,"France"
+"92",2019,"GB","share_mrna_world",0.0286133528980191,"United Kingdom"
+"93",2019,"IT","share_mrna_world",0.00293470286133529,"Italy"
+"94",2019,"JP","share_mrna_world",0.0198092443140132,"Japan"
+"95",2019,"KR","share_mrna_world",0.0198092443140132,"South Korea"
+"96",2019,"SE","share_mrna_world",0.00293470286133529,"Sweden"
+"97",2020,"CN","share_mrna_world",0.026,"China"
+"98",2020,"US","share_mrna_world",0.58,"United States"
+"99",2020,"CA","share_mrna_world",0.013,"Canada"
+"100",2020,"CH","share_mrna_world",0.014,"Switzerland"
+"101",2020,"DE","share_mrna_world",0.172,"Germany"
+"102",2020,"FR","share_mrna_world",0.024,"France"
+"103",2020,"GB","share_mrna_world",0.025,"United Kingdom"
+"104",2020,"IT","share_mrna_world",0.008,"Italy"
+"105",2020,"JP","share_mrna_world",0.008,"Japan"
+"106",2020,"KR","share_mrna_world",0.012,"South Korea"
+"107",2020,"SE","share_mrna_world",0.003,"Sweden"
+"108",2020,"ES","share_mrna_world",0.004,"Spain"
+"109",2012,"CA","mrna_pharma_i",0.0791666666666667,"Canada"
+"110",2012,"DE","mrna_pharma_i",0.0623885918003565,"Germany"
+"111",2012,"US","mrna_pharma_i",0.0682165081601503,"United States"
+"112",2012,"CH","mrna_pharma_i",0.0386178861788618,"Switzerland"
+"113",2012,"CN","mrna_pharma_i",0.046875,"China"
+"114",2012,"ES","mrna_pharma_i",0.0547945205479452,"Spain"
+"115",2012,"FR","mrna_pharma_i",0.0403225806451613,"France"
+"116",2012,"GB","mrna_pharma_i",0.0371900826446281,"United Kingdom"
+"117",2012,"IT","mrna_pharma_i",0.0378548895899054,"Italy"
+"118",2012,"JP","mrna_pharma_i",0.0608465608465608,"Japan"
+"119",2012,"KR","mrna_pharma_i",0.0635838150289017,"South Korea"
+"120",2012,"SE","mrna_pharma_i",0.0337078651685393,"Sweden"
+"121",2013,"DE","mrna_pharma_i",0.0590673575129534,"Germany"
+"122",2013,"FR","mrna_pharma_i",0.0516431924882629,"France"
+"123",2013,"US","mrna_pharma_i",0.0712121212121212,"United States"
+"124",2013,"CA","mrna_pharma_i",0.0774647887323944,"Canada"
+"125",2013,"CH","mrna_pharma_i",0.0338266384778013,"Switzerland"
+"126",2013,"CN","mrna_pharma_i",0.053125,"China"
+"127",2013,"ES","mrna_pharma_i",0.0629370629370629,"Spain"
+"128",2013,"GB","mrna_pharma_i",0.0495575221238938,"United Kingdom"
+"129",2013,"IT","mrna_pharma_i",0.019672131147541,"Italy"
+"130",2013,"JP","mrna_pharma_i",0.0428994082840237,"Japan"
+"131",2013,"KR","mrna_pharma_i",0.0658307210031348,"South Korea"
+"132",2013,"SE","mrna_pharma_i",0.0529411764705882,"Sweden"
+"133",2014,"DE","mrna_pharma_i",0.0560640732265446,"Germany"
+"134",2014,"US","mrna_pharma_i",0.0705787224211621,"United States"
+"135",2014,"CA","mrna_pharma_i",0.0822222222222222,"Canada"
+"136",2014,"CH","mrna_pharma_i",0.0435835351089588,"Switzerland"
+"137",2014,"CN","mrna_pharma_i",0.0603674540682415,"China"
+"138",2014,"ES","mrna_pharma_i",0.0853658536585366,"Spain"
+"139",2014,"FR","mrna_pharma_i",0.0589171974522293,"France"
+"140",2014,"GB","mrna_pharma_i",0.0355987055016181,"United Kingdom"
+"141",2014,"IT","mrna_pharma_i",0.0296052631578947,"Italy"
+"142",2014,"JP","mrna_pharma_i",0.0432900432900433,"Japan"
+"143",2014,"KR","mrna_pharma_i",0.0769230769230769,"South Korea"
+"144",2014,"SE","mrna_pharma_i",0.032051282051282,"Sweden"
+"145",2015,"CH","mrna_pharma_i",0.0617283950617284,"Switzerland"
+"146",2015,"DE","mrna_pharma_i",0.0926339285714286,"Germany"
+"147",2015,"US","mrna_pharma_i",0.0778110303548525,"United States"
+"148",2015,"CA","mrna_pharma_i",0.103792415169661,"Canada"
+"149",2015,"CN","mrna_pharma_i",0.0352941176470588,"China"
+"150",2015,"ES","mrna_pharma_i",0.0515463917525773,"Spain"
+"151",2015,"FR","mrna_pharma_i",0.0604651162790698,"France"
+"152",2015,"GB","mrna_pharma_i",0.0428954423592493,"United Kingdom"
+"153",2015,"IT","mrna_pharma_i",0.0356083086053412,"Italy"
+"154",2015,"JP","mrna_pharma_i",0.0462850182704019,"Japan"
+"155",2015,"KR","mrna_pharma_i",0.0602409638554217,"South Korea"
+"156",2015,"SE","mrna_pharma_i",0.041025641025641,"Sweden"
+"157",2016,"US","mrna_pharma_i",0.0845785170566676,"United States"
+"158",2016,"CH","mrna_pharma_i",0.0625,"Switzerland"
+"159",2016,"DE","mrna_pharma_i",0.122562674094708,"Germany"
+"160",2016,"CA","mrna_pharma_i",0.0819112627986348,"Canada"
+"161",2016,"CN","mrna_pharma_i",0.0342935528120713,"China"
+"162",2016,"ES","mrna_pharma_i",0.074468085106383,"Spain"
+"163",2016,"FR","mrna_pharma_i",0.0613915416098226,"France"
+"164",2016,"GB","mrna_pharma_i",0.0349819059107358,"United Kingdom"
+"165",2016,"IT","mrna_pharma_i",0.0498533724340176,"Italy"
+"166",2016,"JP","mrna_pharma_i",0.0386680988184748,"Japan"
+"167",2016,"KR","mrna_pharma_i",0.0638686131386861,"South Korea"
+"168",2016,"SE","mrna_pharma_i",0.0176211453744493,"Sweden"
+"169",2017,"CH","mrna_pharma_i",0.0679611650485437,"Switzerland"
+"170",2017,"US","mrna_pharma_i",0.0902397260273973,"United States"
+"171",2017,"CA","mrna_pharma_i",0.0978886756238004,"Canada"
+"172",2017,"CN","mrna_pharma_i",0.0700564971751412,"China"
+"173",2017,"DE","mrna_pharma_i",0.119094488188976,"Germany"
+"174",2017,"ES","mrna_pharma_i",0.0689655172413793,"Spain"
+"175",2017,"FR","mrna_pharma_i",0.0700280112044818,"France"
+"176",2017,"GB","mrna_pharma_i",0.0686164229471316,"United Kingdom"
+"177",2017,"IT","mrna_pharma_i",0.0409356725146199,"Italy"
+"178",2017,"JP","mrna_pharma_i",0.0408376963350785,"Japan"
+"179",2017,"KR","mrna_pharma_i",0.0599315068493151,"South Korea"
+"180",2017,"SE","mrna_pharma_i",0.0856031128404669,"Sweden"
+"181",2018,"CH","mrna_pharma_i",0.0417391304347826,"Switzerland"
+"182",2018,"SE","mrna_pharma_i",0.0578512396694215,"Sweden"
+"183",2018,"US","mrna_pharma_i",0.0968379446640316,"United States"
+"184",2018,"CA","mrna_pharma_i",0.0618556701030928,"Canada"
+"185",2018,"CN","mrna_pharma_i",0.0452261306532663,"China"
+"186",2018,"DE","mrna_pharma_i",0.207511737089202,"Germany"
+"187",2018,"ES","mrna_pharma_i",0.065359477124183,"Spain"
+"188",2018,"FR","mrna_pharma_i",0.0527740189445196,"France"
+"189",2018,"GB","mrna_pharma_i",0.0542099192618224,"United Kingdom"
+"190",2018,"IT","mrna_pharma_i",0.0342679127725857,"Italy"
+"191",2018,"JP","mrna_pharma_i",0.0363247863247863,"Japan"
+"192",2018,"KR","mrna_pharma_i",0.0738255033557047,"South Korea"
+"193",2019,"US","mrna_pharma_i",0.0860878661087866,"United States"
+"194",2019,"CA","mrna_pharma_i",0.0462962962962963,"Canada"
+"195",2019,"CH","mrna_pharma_i",0.0465753424657534,"Switzerland"
+"196",2019,"CN","mrna_pharma_i",0.0393162393162393,"China"
+"197",2019,"DE","mrna_pharma_i",0.24583866837388,"Germany"
+"198",2019,"ES","mrna_pharma_i",0.0642201834862385,"Spain"
+"199",2019,"FR","mrna_pharma_i",0.0626506024096386,"France"
+"200",2019,"GB","mrna_pharma_i",0.065546218487395,"United Kingdom"
+"201",2019,"IT","mrna_pharma_i",0.0186915887850467,"Italy"
+"202",2019,"JP","mrna_pharma_i",0.0450751252086811,"Japan"
+"203",2019,"KR","mrna_pharma_i",0.0735694822888283,"South Korea"
+"204",2019,"SE","mrna_pharma_i",0.0307692307692308,"Sweden"
+"205",2020,"CN","mrna_pharma_i",0.0668380462724936,"China"
+"206",2020,"US","mrna_pharma_i",0.0852565044833162,"United States"
+"207",2020,"CA","mrna_pharma_i",0.0503875968992248,"Canada"
+"208",2020,"CH","mrna_pharma_i",0.0491228070175439,"Switzerland"
+"209",2020,"DE","mrna_pharma_i",0.303350970017637,"Germany"
+"210",2020,"FR","mrna_pharma_i",0.0821917808219178,"France"
+"211",2020,"GB","mrna_pharma_i",0.0525210084033613,"United Kingdom"
+"212",2020,"IT","mrna_pharma_i",0.0592592592592593,"Italy"
+"213",2020,"JP","mrna_pharma_i",0.0223463687150838,"Japan"
+"214",2020,"KR","mrna_pharma_i",0.0545454545454545,"South Korea"
+"215",2020,"SE","mrna_pharma_i",0.0265486725663717,"Sweden"
+"216",2020,"ES","mrna_pharma_i",0.0655737704918033,"Spain"
