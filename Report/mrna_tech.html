@@ -12,9 +12,9 @@
 
 
 
-<title>mrna_tech.knit</title>
+<title>mrna_tech.utf8</title>
 
-<script src="mrna_tech_files/header-attrs-2.8/header-attrs.js"></script>
+<script src="mrna_tech_files/header-attrs-2.4/header-attrs.js"></script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -23,9 +23,7 @@
   div.column{display: inline-block; vertical-align: top; width: 50%;}
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
-      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-  </style>
-
+      </style>
 
 
 
@@ -90,17 +88,14 @@
 <p><br></p>
 <p>A closer look at the share of mRNA based patents in total pharma patents (on the world level) reveals that the applied research started to evolve rapidly only in the past several years. Hence, it is very interesting to ask which research hubs are mainly responsible for developing this (possibly) breakthrough medical treatment technology of the future.</p>
 <details>
-<summary>
-<em>Click here to get a detailed description of how we detect mRNA-patents</em>
-</summary>
-<embed src="https://drive.google.com/viewerng/
+<summary><em>Click here to get a detailed description of how we detect mRNA-patents</em></summary> <embed src="https://drive.google.com/viewerng/
 viewer?embedded=true&url=https://innoscape.de/mRNA/MRNA_Technology.pdf" width="100%" height="600">
 </details>
 <p><br></p>
 <hr class="hr_red">
 <div id="figure-1-number-of-patent-applications-in-the-field-of-mrna-is-increasing" class="section level4">
 <h4><strong>Figure 1: Number of patent applications in the field of mRNA is increasing</strong></h4>
-<head>
+<p><head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
@@ -145,7 +140,7 @@ var layout = {
     showline: false
   },
   yaxis: {
-    range: [0.02, 0.1],
+    range: [0.05, 0.09],
     title: '<b>mRNA-patents to overall pharma patents</b>',
     showline: false
   }
@@ -165,8 +160,7 @@ Plotly.newPlot('plot_general', data, layout, {displayModeBar: false});
  
 
 </body>
-    
-<p><span style="font-size:0.8em"><em>Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>.</em></span></p>
+     <span style="font-size:0.8em"><em>Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>.</em></span></p>
 <p><br></p>
 <p>In order to check which country-level pharma eco-systems are the most active in producing mRNA technology related patents, we plot the share of mRNA based patents in the country’s total pharmaceutical patents applied at the <a href=https://www.patentsview.org target = “_blank”>USPTO</a>.</p>
 <p><br></p>
@@ -174,191 +168,11 @@ Plotly.newPlot('plot_general', data, layout, {displayModeBar: false});
 </div>
 <div id="figure-2-germany-is-becoming-one-of-the-leading-mrna-technology-hubs" class="section level4">
 <h4><strong>Figure 2: Germany is becoming one of the leading mRNA-technology hubs</strong></h4>
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.2.1/math.min.js"></script>
-  <script src= "https://d3js.org/d3.v4.min.js"></script>  
-  <script src= "https://d3js.org/d3-color.v1.min.js"></script>  
-  <script src= "https://d3js.org/d3-interpolate.v1.min.js"></script>  
-  <script src= "https://d3js.org/d3-scale-chromatic.v1.min.js"></script>  
-  <link rel="stylesheet" href="style.css" type="text/css" />
-
-<script>
-
-Plotly.d3.csv("https://raw.githubusercontent.com/ch54321/mrna_tech/master/ctry_trend_mrna.csv", function(err, rows){
-function unpack(rows, key) {
-        return rows.map(function(row) { return row[key]; });
-    }
-
-var     allTech = unpack(rows, 'ctry_inv'),
-        pat_value = unpack(rows, 'value'),
-        filing = unpack(rows, 'filing'),
-        variable = unpack(rows, 'variable'),
-        listofCountries = [],
-        currentCountry = [],
-        currentpat_value = [],
-        currentInv = [],
-      //  currentcountryName = [];
-        color_var = [];
-        current_color = [];
-
-    for (var i = 0; i < allTech.length; i++ ){
-        if (listofCountries.indexOf(allTech[i]) === -1 ){
-            listofCountries.push(allTech[i]);
-        }
-    }
-    
-    
-  
-   function getCountryData(chosenCountry, chosenvar_2) {
-        currentfiling = [];
-        currentpat_value = [];
-        currentInv = [];
-        currentFiling = [];
-     //   currentcountryName = [];
-     //           document.getElementById("demo").innerHTML = variable;
-
-        for (var i = 0 ; i < allTech.length ; i++){
-        
-        for(var j = 0; j < allTech.length; j ++){
-            for(var k = 0; k < allTech.length; k ++){
-            if ( allTech[i] === chosenCountry[j] && variable[i] === chosenvar_2[k]) {
-                currentpat_value.push(pat_value[i]);
-                currentInv.push(allTech[i]);
-                currentFiling.push(filing[i]);
-
-          //      current_color.push(color_var[i]);
-         //       currentcountryName.push(allcountryName[i]);
-                }
-        }
-
-      }
-
-    }
-    
-};
-
-    // Default Country Data
-    setBubblePlot(["CH", "DE", "US"], ["mrna_pharma_i"]);
-
-    function setBubblePlot(chosenCountry, chosenvar_2) {
-        getCountryData(chosenCountry, chosenvar_2);
-
-        var trace1 = {
-            y: currentpat_value,
-            x: currentFiling,
-            type: 'scatter',
-            mode: 'lines',
-            transforms: [{type: 'groupby', 
-                          groups: currentInv,
-                          styles: [
-                          {target: 'CH', value: {marker: {color: d3.interpolateViridis(0.7)}}},
-                          {target: 'CA', value: {marker: {color: d3.interpolateViridis(0)}}},
-                          {target: 'CN', value: {marker: {color: d3.interpolateViridis(0.1)}}},
-                          {target: 'JP', value: {marker: {color: d3.interpolateViridis(0.65)}}},
-                          {target: 'KR', value: {marker: {color: d3.interpolateViridis(0.3)}}},
-                          {target: 'US', value: {marker: {color: d3.interpolateViridis(0.2)}}},
-                          {target: 'FR', value: {marker: {color: d3.interpolateViridis(0.4)}}},      
-                          {target: 'ES', value: {marker: {color: d3.interpolateViridis(0.5)}}},
-                          {target: 'DE', value: {marker: {color: d3.interpolateViridis(0.9)}}},
-                          {target: 'GB', value: {marker: {color: d3.interpolateViridis(0.8)}}},
-                          {target: 'SE', value: {marker: {color: d3.interpolateViridis(0.6)}}},      
-                          {target: 'IT', value: {marker: {color: d3.interpolateViridis(1)}}}
-                          ]
-            }], 
-        };
-        
-        var data = [trace1];
-
-
-
-
-Plotly.newPlot('myDiv', data, {displayModeBar: false});
-    };
-
-var countrySelector = document.getElementById("select_1");
-var chosenvar_2 = document.getElementById("select_2");
-
-
-
-function updateCountry(){
-  var var_2l = [];
-  var var_1l = [];
-
-
-  $.each($("#select_1 option:selected" ), function() {
-  var_2l.push($(this).val());  
-  })
-  
-  $.each($("#select_2 option:selected" ), function() {
-  var_1l.push($(this).val());  
-  })
-  
- 
-
- 
- setBubblePlot(var_2l, var_1l);
-}
-    
-countrySelector.addEventListener('change', updateCountry, false);
-chosenvar_2.addEventListener('change', updateCountry, false);
-
-});    
-
-</script>
-</head>
-
-
-<body>
-<div class="showcase__section" id="bubble">
-  <div id="bubbleplots">
-      <div class="plot" id="plotdiv"></div>
-      <div class="control-row">
-        <select class="selectpicker" id="select_1" name="select1" multiple="multiple" data-actions-box="true">
-        <option value="CA">Canada</option>  
-        <option value="CN">China</option>  
-        <option value="FR">France</option>
-        <option value="DE" selected>Germany</option>
-        <option value="GB">Great Britain</option>
-        <option value="IT">Italy</option>
-        <option value="JP">Japan</option>
-        <option value="KR">South Korea</option>
-        <option value="ES">Spain</option>
-        <option value="SE">Sweden</option>
-        <option value="CH" selected>Switzerland</option>  
-        <option value="US" selected>USA</option>
-        </select>
-    </div>
-  </div>
-</div>
-
-<div class="showcase__section" id="bubble">
-  <div id="bubbleplots">
-      <div class="plot" id="plotdiv"></div>
-      <div class="control-row">
-        <select class="selectpicker" id="select_2" name="select2" data-actions-box="true">
-        <option value="mrna_pharma_i" selected>mRNA to pharma</option>  
-        <option value="share_mrna_world">Share country to global</option>  
-        </select>
-    </div>
-  </div>
-</div>
-
-
-
-<div id='myDiv'></div>
-
-<!--<p id="demo"></p> -->
-
-</body>
-    
+<iframe width="100%" height="480" scrolling="no" frameBorder="0" style="overflow: hidden" src="https://innoscape.de/mRNA/plot_ctry.html" id="geo_plot">
+<p>
+Your browser does not support iframes
+</p>
+</iframe>
 <p><span style="font-size:0.8em"><em>Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>.</em></span></p>
 <p><br></p>
 <p>Three interesting conclusions may be drawn. First, the Western world drives the mRNA applied research compared to big Asian research hubs. Second, until 2014, the USA had the largest (relative) share of mRNA based patents in the world and third, since 2015, Germany’s pharmaceuticals have strongly emerged as new leaders in the field of mRNA, strongly focusing its attention to developing and patenting mRNA based technologies. Nonetheless, the USA remains the most productive mRNA patenting hub where roughly 60% of all mRNA based patents in the world are developed (see our second indicator: share of each country’s mRNA patents in the total number of mRNA patents in the world), however, Germany is rapidly catching up over the last three years.</p>
@@ -374,7 +188,7 @@ chosenvar_2.addEventListener('change', updateCountry, false);
 </div>
 <div id="figure-3-universities-play-a-significant-role-in-mrna-patents." class="section level4">
 <h4><strong>Figure 3: Universities play a significant role in mRNA patents.</strong></h4>
-<head>
+<p><head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
@@ -434,10 +248,9 @@ Plotly.newPlot('plot_firm', data, layout, {displayModeBar: false});
  
 
 </body>
-    
-<p><span style="font-size:0.8em"><em>Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>.</em></span></p>
+     <span style="font-size:0.8em"><em>Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>.</em></span></p>
 <p><br></p>
-<p>The most patent applications have been made by Curevac and Moderna, both appeared as vaccine developers during the Covid-19 pandemic, even though only Moderna’s ultimately met the approval criteria. It is interesting to note that Biontech, the other major Covid-19 vaccine developer, is not among the 15 largest mRNA patent applicants.</p>
+<p>The most patent applications have been made by Curevac and Moderna, both appeared as vaccine developers during the Covid-19 pandemic, even though only Moderna’s ultimately met the approval criteria.</p>
 <div class="bloc_div">
 <blockquote>
 <strong><em>Universities are very active in patenting mRNA-innovations</em></strong>
