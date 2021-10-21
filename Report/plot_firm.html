@@ -15,6 +15,12 @@
   <link rel="stylesheet" href="style.css" type="text/css" />
 
 <script>
+
+
+function roundToTwo(num) {    
+    return +(Math.round(num + "e+2")  + "e-2");
+}
+
 Plotly.d3.csv("https://raw.githubusercontent.com/ch54321/mrna_tech/master/firm_mrna.csv", function(err, rows){
 function unpack(rows, key) {
         return rows.map(function(row) { return row[key]; });
@@ -22,17 +28,30 @@ function unpack(rows, key) {
 
 var     pat_value = unpack(rows, 'share'),
         firm = unpack(rows, 'organization');
+        ctry = unpack(rows, 'ctry_firm');
+        uni = unpack(rows, 'university');
+        text_var = [];
+        
 
+      for (var i = 0 ; i < ctry.length ; i++){
+                text_var.push('Assignee: ' + firm[i] + '<br>' + 
+                'University: ' + uni[i] + '<br>' + 'Country of origin: ' + ctry[i] + '<br>' +  
+                          'Share to overall: ' + roundToTwo(pat_value[i]) + '%');
+              }
 
 
 var data= [{
             y: pat_value,
             x: firm,
+            customdata: text_var,
+            hovertemplate:  '%{customdata}' + '<extra></extra>',
             type: 'bar',
             marker: {
     color: d3.interpolateViridis(0.7)}}];
             
  var layout = {
+          scrollZoom: false,
+          autosize: false,
           hovermode: "closest",
           hoverlabel: { bgcolor: "#FFF" },
           height: 500,

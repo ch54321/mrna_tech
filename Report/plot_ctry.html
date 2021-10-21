@@ -16,6 +16,10 @@
 
 <script>
 
+function roundToTwo(num) {    
+    return +(Math.round(num + "e+2")  + "e-2");
+}
+
 Plotly.d3.csv("https://raw.githubusercontent.com/ch54321/mrna_tech/master/ctry_trend_mrna.csv", function(err, rows){
 function unpack(rows, key) {
         return rows.map(function(row) { return row[key]; });
@@ -25,6 +29,7 @@ var     allTech = unpack(rows, 'ctry_inv'),
         pat_value = unpack(rows, 'value'),
         filing = unpack(rows, 'filing'),
         variable = unpack(rows, 'variable'),
+        ctry_name = unpack(rows, 'ctry_name'),
         listofCountries = [],
         currentCountry = [],
         currentpat_value = [],
@@ -41,23 +46,26 @@ var     allTech = unpack(rows, 'ctry_inv'),
     }
     
     
-  
    function getCountryData(chosenCountry, chosenvar_2) {
         currentfiling = [];
         currentpat_value = [];
         currentInv = [];
         currentFiling = [];
+        text_var = [];
      //   currentcountryName = [];
      //           document.getElementById("demo").innerHTML = variable;
 
         for (var i = 0 ; i < allTech.length ; i++){
-        
         for(var j = 0; j < allTech.length; j ++){
             for(var k = 0; k < allTech.length; k ++){
             if ( allTech[i] === chosenCountry[j] && variable[i] === chosenvar_2[k]) {
                 currentpat_value.push(pat_value[i]);
                 currentInv.push(allTech[i]);
                 currentFiling.push(filing[i]);
+                text_var.push('Country: ' + ctry_name[i] + '<br>' +  
+                          'Filing: ' + filing[i] + '<br>' +
+                          'Value: ' + roundToTwo(pat_value[i]));
+
 
           //      current_color.push(color_var[i]);
          //       currentcountryName.push(allcountryName[i]);
@@ -79,11 +87,19 @@ var     allTech = unpack(rows, 'ctry_inv'),
         getCountryData(chosenCountry, chosenvar_2);
 
 
+if(chosenvar_2 == "mrna_pharma_i"){
+  var y_title = '<b>Share of mRNA in all pharma patent applications</b>';
+} else {
+  var y_title = '<b>Share of a country in global mRNA patent applications</b>';
+}
+
         var trace1 = {
             y: currentpat_value,
             x: currentFiling,
+            customdata: text_var,
             type: 'scatter',
             mode: 'lines',
+            hovertemplate:  '%{customdata}' + '<extra></extra>',
             transforms: [{type: 'groupby', 
                           groups: currentInv,
                           styles: [
@@ -105,10 +121,42 @@ var     allTech = unpack(rows, 'ctry_inv'),
         
         var data = [trace1];
 
+var layout = {
+  scrollZoom: false,
+  autosize: false,
+  width: 800,
+  height: 500,
+  hovermode: "closest",
+    margin: {
+    l: 100,
+    r: 100,
+    b: 100,
+    t: 20
+  },
+
+   xaxis: {
+     fixedrange: true,
+         range: [2012, 2021],
+
+    title: '<b>Filing year</b>',
+    zeroline: false,
+    showaxis: true,
+    showline: false,
+    ticks: 'outside'
+//    showgrid: false
+  },
+  yaxis: {
+    fixedrange: true,
+    title: y_title,
+    showline: false,
+    zeroline: false,
+//    showgrid: false,
+    ticks: 'outside'
+    }
+};
 
 
-
-Plotly.newPlot('myDiv', data, {displayModeBar: false});
+Plotly.newPlot('myDiv', data, layout, {displayModeBar: false});
     };
 
 var countrySelector = document.getElementById("select_1");
@@ -173,7 +221,7 @@ chosenvar_2.addEventListener('change', updateCountry, false);
       <div class="control-row">
         <select class="selectpicker" id="select_2" name="select2" data-actions-box="true">
         <option value="mrna_pharma_i" selected>mRNA to pharma</option>  
-        <option value="share_mrna_world">Share country to global</option>  
+        <option value="share_mrna_world">Share country in global mRNA</option>  
         </select>
     </div>
   </div>

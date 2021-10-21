@@ -15,6 +15,10 @@
   <link rel="stylesheet" href="style.css" type="text/css" />
 
 <script>
+function roundToTwo(num) {    
+    return +(Math.round(num + "e+2")  + "e-2");
+}
+
 Plotly.d3.csv("https://raw.githubusercontent.com/ch54321/mrna_tech/master/general_trend_mrna.csv", function(err, rows){
 function unpack(rows, key) {
         return rows.map(function(row) { return row[key]; });
@@ -36,21 +40,37 @@ var data= [{
         
         
 var layout = {
- 
-  xaxis: {
+            scrollZoom: false,
+              autosize: false,
+  width: 800,
+  height: 500,
+    margin: {
+    l: 100,
+    r: 100,
+    b: 100,
+    t: 20
+  },
+
+   xaxis: {
+     fixedrange: true,
+         range: [2012, 2021],
+
     title: '<b>Filing year</b>',
     zeroline: false,
-    showline: false
+    showaxis: true,
+    showline: false,
+    ticks: 'outside'
+//    showgrid: false
   },
   yaxis: {
-    range: [0.05, 0.09],
-    title: '<b>mRNA-patents to overall pharma patents</b>',
-    showline: false
-  }
+    fixedrange: true,
+    range: [0, 0.09],
+    title: '<b>Share of mRNA in all pharma patent applications</b>',
+    showline: false,
+//    showgrid: false,
+    ticks: 'outside'
+    }
 };
-
-
-
 
 Plotly.newPlot('plot_general', data, layout, {displayModeBar: false});
 });    
@@ -58,9 +78,7 @@ Plotly.newPlot('plot_general', data, layout, {displayModeBar: false});
 </script>
 </head>
 
+<body>
 <div id='plot_general'></div>
-
- 
-
 </body>
     

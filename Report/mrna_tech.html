@@ -84,17 +84,17 @@
  -->
 <p><img src="mrna_pic.jpg" style="width:100.0%" /></p>
 <p><br></p>
-<p><strong>The science of mRNA gained a lot of attention during the ongoing pandemic. Two mRNA vaccines have proven their efficacy against Covid-19 and for the first time in history this technology was used to battle a disease on a large scale. This important milestone could mean the beginning of a new era - the era of mRNA technology based medical treatments. The rapid development and availability of this technology is also manifested in the increasing number of patent-applications based on mRNA within the pharmaceutical sector.</strong></p>
+<p><strong>The science of mRNA gained a lot of attention during the ongoing pandemic. Two mRNA vaccines have proven their efficacy against Covid-19 and for the first time in history this technology was used to battle a disease on a large scale. This important milestone could mean the beginning of a new era - the era of mRNA technology based medical treatments. In the following, we show how the technology has developed over time and which countries and companies play an important role.</strong></p>
 <p><br></p>
-<p>A closer look at the share of mRNA based patents in total pharma patents (on the world level) reveals that the applied research started to evolve rapidly only in the past several years. Hence, it is very interesting to ask which research hubs are mainly responsible for developing this (possibly) breakthrough medical treatment technology of the future.</p>
+<p>As Figure 1 shows, the rapid development and availability of the mRNA-technology is manifested in an increasing number of patent-applications relative to total pharma patent applications at the <a href="https://www.uspto.gov/" target ="blank">US patent office (USPTO)</a> in the past several years. <!--A look at the share of mRNA based patent applications in total pharma patent applications (on the world level) reveals that applied research in the field of mRNA started to evolve rapidly only in the past several years.--></p>
 <details>
 <summary><em>Click here to get a detailed description of how we detect mRNA-patents</em></summary> <embed src="https://drive.google.com/viewerng/
 viewer?embedded=true&url=https://innoscape.de/mRNA/MRNA_Technology.pdf" width="100%" height="600">
 </details>
 <p><br></p>
 <hr class="hr_red">
-<div id="figure-1-number-of-patent-applications-in-the-field-of-mrna-is-increasing" class="section level4">
-<h4><strong>Figure 1: Number of patent applications in the field of mRNA is increasing</strong></h4>
+<div id="figure-1-share-of-patent-applications-in-the-field-of-mrna-relative-to-pharmaceuticals-is-increasing" class="section level4">
+<h4><strong>Figure 1: Share of patent applications in the field of mRNA relative to pharmaceuticals is increasing</strong></h4>
 <p><head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -112,6 +112,10 @@ viewer?embedded=true&url=https://innoscape.de/mRNA/MRNA_Technology.pdf" width="1
   <link rel="stylesheet" href="style.css" type="text/css" />
 
 <script>
+function roundToTwo(num) {    
+    return +(Math.round(num + "e+2")  + "e-2");
+}
+
 Plotly.d3.csv("https://raw.githubusercontent.com/ch54321/mrna_tech/master/general_trend_mrna.csv", function(err, rows){
 function unpack(rows, key) {
         return rows.map(function(row) { return row[key]; });
@@ -133,21 +137,37 @@ var data= [{
         
         
 var layout = {
- 
-  xaxis: {
+            scrollZoom: false,
+              autosize: false,
+  width: 800,
+  height: 500,
+    margin: {
+    l: 100,
+    r: 100,
+    b: 100,
+    t: 20
+  },
+
+   xaxis: {
+     fixedrange: true,
+         range: [2012, 2021],
+
     title: '<b>Filing year</b>',
     zeroline: false,
-    showline: false
+    showaxis: true,
+    showline: false,
+    ticks: 'outside'
+//    showgrid: false
   },
   yaxis: {
-    range: [0.05, 0.09],
-    title: '<b>mRNA-patents to overall pharma patents</b>',
-    showline: false
-  }
+    fixedrange: true,
+    range: [0, 0.09],
+    title: '<b>Share of mRNA in all pharma patent applications</b>',
+    showline: false,
+//    showgrid: false,
+    ticks: 'outside'
+    }
 };
-
-
-
 
 Plotly.newPlot('plot_general', data, layout, {displayModeBar: false});
 });    
@@ -155,30 +175,28 @@ Plotly.newPlot('plot_general', data, layout, {displayModeBar: false});
 </script>
 </head>
 
+<body>
 <div id='plot_general'></div>
-
- 
-
 </body>
-     <span style="font-size:0.8em"><em>Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>.</em></span></p>
+     <span style="font-size:0.8em"><em>Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>. The data is available on <a href="https://github.com/ch54321/mrna_tech/blob/master/general_trend_mrna.csv" target ="blank">Github</a>.</em></span></p>
 <p><br></p>
-<p>In order to check which country-level pharma eco-systems are the most active in producing mRNA technology related patents, we plot the share of mRNA based patents in the country’s total pharmaceutical patents applied at the <a href=https://www.patentsview.org target = “_blank”>USPTO</a>.</p>
+<p>But which research hubs are mainly responsible for developing this (possibly) breakthrough medical treatment technology of the future? In order to check which country-level pharma eco-systems are the most active ones in developing the mRNA-technology, we plot the share of mRNA-based patent applications in the country’s total pharmaceutical patent applications filed at the <a href=https://www.patentsview.org target = “_blank”>USPTO</a>.</p>
 <p><br></p>
 <hr class="hr_red">
 </div>
-<div id="figure-2-germany-is-becoming-one-of-the-leading-mrna-technology-hubs" class="section level4">
-<h4><strong>Figure 2: Germany is becoming one of the leading mRNA-technology hubs</strong></h4>
+<div id="figure-2-germany-has-a-strong-focus-on-mrna-based-technologies" class="section level4">
+<h4><strong>Figure 2: Germany has a strong focus on mRNA-based technologies</strong></h4>
 <iframe width="100%" height="480" scrolling="no" frameBorder="0" style="overflow: hidden" src="https://innoscape.de/mRNA/plot_ctry.html" id="geo_plot">
 <p>
 Your browser does not support iframes
 </p>
 </iframe>
-<p><span style="font-size:0.8em"><em>Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>.</em></span></p>
+<p><span style="font-size:0.8em"><em>Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>. The data is available on <a href="https://github.com/ch54321/mrna_tech/blob/master/ctry_trend_mrna.csv" target ="blank">Github</a>.</em></span></p>
 <p><br></p>
-<p>Three interesting conclusions may be drawn. First, the Western world drives the mRNA applied research compared to big Asian research hubs. Second, until 2014, the USA had the largest (relative) share of mRNA based patents in the world and third, since 2015, Germany’s pharmaceuticals have strongly emerged as new leaders in the field of mRNA, strongly focusing its attention to developing and patenting mRNA based technologies. Nonetheless, the USA remains the most productive mRNA patenting hub where roughly 60% of all mRNA based patents in the world are developed (see our second indicator: share of each country’s mRNA patents in the total number of mRNA patents in the world), however, Germany is rapidly catching up over the last three years.</p>
+<p>Three interesting conclusions may be drawn from Figure 2. First, the Western world drives mRNA-patenting activity compared to big Asian research hubs. Second, until 2014, the USA had the largest (relative) share of mRNA based patents in the world and third, since 2015, Germany’s pharmaceuticals have strongly focused on developing and patenting mRNA-based technologies. Nonetheless, the USA remains the most productive mRNA patenting hub where roughly 60% of all mRNA based patents in the world are developed (see our second indicator: share of each country’s mRNA patents in the total number of mRNA patents in the world), however, Germany is rapidly catching up over the last three years.</p>
 <div class="bloc_div">
 <blockquote>
-<strong><em>Germany’s pharmaceuticals have strongly emerged as new leaders in the field of mRNA</em></strong>
+<strong><em>Germany’s pharmaceuticals have strongly focused on developing and patenting mRNA-based technologies</em></strong>
 </blockquote>
 </div>
 <p><br></p>
@@ -186,8 +204,8 @@ Your browser does not support iframes
 <p><br></p>
 <hr class="hr_red">
 </div>
-<div id="figure-3-universities-play-a-significant-role-in-mrna-patents." class="section level4">
-<h4><strong>Figure 3: Universities play a significant role in mRNA patents.</strong></h4>
+<div id="figure-3-universities-play-a-significant-role-in-mrna-patents" class="section level4">
+<h4><strong>Figure 3: Universities play a significant role in mRNA patents</strong></h4>
 <p><head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -205,6 +223,12 @@ Your browser does not support iframes
   <link rel="stylesheet" href="style.css" type="text/css" />
 
 <script>
+
+
+function roundToTwo(num) {    
+    return +(Math.round(num + "e+2")  + "e-2");
+}
+
 Plotly.d3.csv("https://raw.githubusercontent.com/ch54321/mrna_tech/master/firm_mrna.csv", function(err, rows){
 function unpack(rows, key) {
         return rows.map(function(row) { return row[key]; });
@@ -212,17 +236,30 @@ function unpack(rows, key) {
 
 var     pat_value = unpack(rows, 'share'),
         firm = unpack(rows, 'organization');
+        ctry = unpack(rows, 'ctry_firm');
+        uni = unpack(rows, 'university');
+        text_var = [];
+        
 
+      for (var i = 0 ; i < ctry.length ; i++){
+                text_var.push('Assignee: ' + firm[i] + '<br>' + 
+                'University: ' + uni[i] + '<br>' + 'Country of origin: ' + ctry[i] + '<br>' +  
+                          'Share to overall: ' + roundToTwo(pat_value[i]) + '%');
+              }
 
 
 var data= [{
             y: pat_value,
             x: firm,
+            customdata: text_var,
+            hovertemplate:  '%{customdata}' + '<extra></extra>',
             type: 'bar',
             marker: {
     color: d3.interpolateViridis(0.7)}}];
             
  var layout = {
+          scrollZoom: false,
+          autosize: false,
           hovermode: "closest",
           hoverlabel: { bgcolor: "#FFF" },
           height: 500,
@@ -248,17 +285,15 @@ Plotly.newPlot('plot_firm', data, layout, {displayModeBar: false});
  
 
 </body>
-     <span style="font-size:0.8em"><em>Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>.</em></span></p>
+     <span style="font-size:0.8em"><em>Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>. The data is available on <a href="https://github.com/ch54321/mrna_tech/blob/master/firm_mrna.csv" target ="blank">Github</a>.</em></span></p>
 <p><br></p>
-<p>The most patent applications have been made by Curevac and Moderna, both appeared as vaccine developers during the Covid-19 pandemic, even though only Moderna’s ultimately met the approval criteria.</p>
+<p>The most patent applications have been made by Curevac and Moderna, both appeared as vaccine developers during the Covid-19 pandemic, even though only Moderna’s ultimately got an approval.</p>
 <div class="bloc_div">
 <blockquote>
-<strong><em>Universities are very active in patenting mRNA-innovations</em></strong>
+<strong><em>Universities are very active in mRNA-related patent applications</em></strong>
 </blockquote>
 </div>
-<p>Novartis takes a very high 3th place which indicates that Swiss pharmacists possess a high scientific interest and know-how when it comes to mRNA research and development. Another very interesting observation is that universities are very active in patenting mRNA-innovations, which shows how crucial the role of academic research is for the emergence of new technologies.</p>
-<p><br></p>
-<p><span style="font-size:0.8em"><em>Source and notes: CIEB’s own calculations based on data from the <a href = https://www.patentsview.org target = “_blank”>USPTO</a>. A positive coefficient means that partnering with the respective country is associated with innovations of better quality than solely domestic innovations. A negative coefficient means the opposite. The horizontal bar plots show the corresponding 95% confidence interval. If the lower bound is above zero, the corresponding coefficient is significantly positive at the 95% level or higher. If the upper bound is below zero, the coefficient is significantly negative at the 95% level or higher.</em></span></p>
+<p>Novartis takes a very high 3th place which indicates that Swiss pharmacists possess a high scientific interest and know-how when it comes to mRNA research and development. Another very interesting observation is that universities are very active in mRNA-related patent applications, which shows how crucial the role of academic research is for the emergence of new technologies.</p>
 <p><br></p>
 <div>
 <iframe id="slider" width="100%&quot;" height="400" scrolling="no" frameBorder="0" style="overflow: hidden" src="https://innoscape.de/general_stuff/teaser/mrna_teaser.html">
