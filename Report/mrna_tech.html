@@ -54,14 +54,14 @@
 </script>
 <div class="container-fluid main-container">
 
-<meta property='og:title' content='The rise of mRNA-technology'/>
-<meta property='og:image' content='https://innoscape.de/internat_collab/title_new.jpg'/>
-<meta property='og:description' content='As part of our #Innoscape Project, we investigate how partnering with different locations affects the quality of innovations. In short, collaborating with research sites in the USA and Great Britain has the greatest effect on the quality of innovation.'/>
-<meta property='og:url' content='https://innoscape.ch/en/publications/international-rd'/>
+<meta property='og:title' content='The rise of mRNA technology'/>
+<meta property='og:image' content='https://innoscape.de/mRNA/mrna_pic.jpg'/>
+<meta property='og:description' content='The pharma’s hottest new tech – mRNA, proved itself successful in battling Covid-19. It could be a cornerstone of medical treatments in the future. We investigate which R&D pharma hubs are driving the development of this technology.'/>
+<meta property='og:url' content='https://innoscape.ch/en/publications/mrna-tech'/>
 </head>
 <!-- START with text -->
 <div id="the-rise-of-mrna-technology" class="section level3">
-<h3><strong>The rise of mRNA-technology</strong></h3>
+<h3><strong>The rise of mRNA technology</strong></h3>
 <p><br></p>
 <p style="text-align: left; line-height: 100%;">
 <em>October 2021</em> by <a href="#" data-placement="bottom" data-toggle="tooltip"  data-html="true" title="<img src='https://innoscape.de/authors/DF_picture.jpg'><b>Dragan Filimonovic</b> is a project collaborator and research associate at the <a href='https://cieb.unibas.ch' target = “_blank”>Center for International Economics and Business | CIEB</a>. He holds a PhD in Economics from the University of Basel and is specialized in applying methods for causal inference to evaluate public policies. Dragan is passionate about working with big data and is always in pursuit of finding creative solutions to interesting economic riddles.
@@ -83,10 +83,11 @@
 </p>
  -->
 <p><img src="mrna_pic.jpg" style="width:100.0%" /></p>
+<p><a href="https://iStock.com" target = "_blank">iStock.com/kemalbas</a></p>
 <p><br></p>
-<p><strong>The science of mRNA gained a lot of attention during the ongoing pandemic. Two mRNA vaccines have proven their efficacy against Covid-19 and for the first time in history this technology was used to battle a disease on a large scale. This important milestone could mean the beginning of a new era - the era of mRNA technology based medical treatments. In the following, we show how the technology has developed over time and which countries and companies play an important role.</strong></p>
+<p><strong>The science of mRNA gained a lot of attention during the ongoing pandemic. Two mRNA vaccines have proven their efficacy against Covid-19 and for the first time in history this technology was used to battle a disease on a large scale. This important milestone could mean the beginning of a new era - the era of mRNA based medical treatments. In the following, we show how the technology has developed over time and which countries and companies play an important role.</strong></p>
 <p><br></p>
-<p>As Figure 1 shows, the rapid development and availability of the mRNA-technology is manifested in an increasing number of patent-applications relative to total pharma patent applications at the <a href="https://www.uspto.gov/" target ="blank">US patent office (USPTO)</a> in the past several years. <!--A look at the share of mRNA based patent applications in total pharma patent applications (on the world level) reveals that applied research in the field of mRNA started to evolve rapidly only in the past several years.--></p>
+<p>As Figure 1 shows, the rapid development and availability of the mRNA technology is manifested in an increasing number of patent applications relative to total pharma patent applications at the <a href="https://www.uspto.gov/" target ="blank">US patent office (USPTO)</a> in the past several years. <!--A look at the share of mRNA based patent applications in total pharma patent applications (on the world level) reveals that applied research in the field of mRNA started to evolve rapidly only in the past several years.--></p>
 <details>
 <summary><em>Click here to get a detailed description of how we detect mRNA-patents</em></summary> <embed src="https://drive.google.com/viewerng/
 viewer?embedded=true&url=https://innoscape.de/mRNA/MRNA_Technology.pdf" width="100%" height="600">
@@ -138,9 +139,9 @@ var data= [{
         
 var layout = {
             scrollZoom: false,
-              autosize: false,
-  width: 800,
-  height: 500,
+              autosize: true,
+//  width: 800,
+//  height: 500,
     margin: {
     l: 100,
     r: 100,
@@ -150,21 +151,22 @@ var layout = {
 
    xaxis: {
      fixedrange: true,
-         range: [2012, 2021],
+         range: [2012, 2020],
 
     title: '<b>Filing year</b>',
     zeroline: false,
     showaxis: true,
     showline: false,
-    ticks: 'outside'
-//    showgrid: false
+    ticks: 'outside',
+    showgrid: false
   },
   yaxis: {
+    tickformat: '.1%', 
     fixedrange: true,
-    range: [0, 0.09],
-    title: '<b>Share of mRNA in all pharma patent applications</b>',
+  //  range: [0, 0.09],
+    title: '<b>% of mRNA in total pharma patent applications</b>',
     showline: false,
-//    showgrid: false,
+    showgrid: false,
     ticks: 'outside'
     }
 };
@@ -180,27 +182,27 @@ Plotly.newPlot('plot_general', data, layout, {displayModeBar: false});
 </body>
      <span style="font-size:0.8em"><em>Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>. The data is available on <a href="https://github.com/ch54321/mrna_tech/blob/master/general_trend_mrna.csv" target ="blank">Github</a>.</em></span></p>
 <p><br></p>
-<p>But which research hubs are mainly responsible for developing this (possibly) breakthrough medical treatment technology of the future? In order to check which country-level pharma eco-systems are the most active ones in developing the mRNA-technology, we plot the share of mRNA-based patent applications in the country’s total pharmaceutical patent applications filed at the <a href=https://www.patentsview.org target = “_blank”>USPTO</a>.</p>
+<p>But which research hubs are mainly responsible for developing this (possibly) breakthrough medical treatment technology of the future? In order to check which country-level pharma eco-systems are the most active ones in developing the mRNA technology, we plot the share of mRNA based patent applications in the country’s total pharmaceutical patent applications filed at the <a href=https://www.patentsview.org target = “_blank”>USPTO</a>.</p>
 <p><br></p>
 <hr class="hr_red">
 </div>
 <div id="figure-2-germany-has-a-strong-focus-on-mrna-based-technologies" class="section level4">
-<h4><strong>Figure 2: Germany has a strong focus on mRNA-based technologies</strong></h4>
-<iframe width="100%" height="480" scrolling="no" frameBorder="0" style="overflow: hidden" src="https://innoscape.de/mRNA/plot_ctry.html" id="geo_plot">
+<h4><strong>Figure 2: Germany has a strong focus on mRNA based technologies</strong></h4>
+<iframe width="100%" height="540" scrolling="no" frameBorder="0" style="overflow: hidden" src="https://innoscape.de/mRNA/plot_ctry.html" id="geo_plot">
 <p>
 Your browser does not support iframes
 </p>
 </iframe>
 <p><span style="font-size:0.8em"><em>Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>. The data is available on <a href="https://github.com/ch54321/mrna_tech/blob/master/ctry_trend_mrna.csv" target ="blank">Github</a>.</em></span></p>
 <p><br></p>
-<p>Three interesting conclusions may be drawn from Figure 2. First, the Western world drives mRNA-patenting activity compared to big Asian research hubs. Second, until 2014, the USA had the largest (relative) share of mRNA based patents in the world and third, since 2015, Germany’s pharmaceuticals have strongly focused on developing and patenting mRNA-based technologies. Nonetheless, the USA remains the most productive mRNA patenting hub where roughly 60% of all mRNA based patents in the world are developed (see our second indicator: share of each country’s mRNA patents in the total number of mRNA patents in the world), however, Germany is rapidly catching up over the last three years.</p>
+<p>Three interesting conclusions may be drawn from Figure 2. First, the Western world drives the mRNA-patenting activity compared to big Asian research hubs. Second, until 2014, the USA had the largest (relative to domestic pharma patents) share of mRNA based patent applications at the USPTO and third, since 2015, Germany’s pharmaceuticals have strongly profiled their pharma patent applications portfolio towards mRNA technology, becoming world-wide the industry that is most focused on developing and patenting mRNA based technologies. Nonetheless, the USA remains the most productive mRNA patenting hub where roughly 60% of all USPTO mRNA patent applications are developed (see our second indicator: % of a country in total mRNA patent applications), however, Germany is rapidly catching up over the last three years.</p>
 <div class="bloc_div">
 <blockquote>
-<strong><em>Germany’s pharmaceuticals have strongly focused on developing and patenting mRNA-based technologies</em></strong>
+<strong><em>Germany’s pharmaceuticals have strongly focused on developing and patenting mRNA based technologies</em></strong>
 </blockquote>
 </div>
 <p><br></p>
-<p>Finally, it is utterly important to identify and acknowledge the world’s leading pharmaceutical organizations in the field of mRNA technology. The following graph presents the 15 firms and universities with the largest number of filed mRNA patents in the entire world.</p>
+<p>Finally, it is utterly important to identify and acknowledge the world’s leading pharmaceutical organizations in the field of mRNA technology. The following graph presents the 15 firms and universities with the largest number of filed mRNA patent applications at the USPTO.</p>
 <p><br></p>
 <hr class="hr_red">
 </div>
@@ -234,43 +236,50 @@ function unpack(rows, key) {
         return rows.map(function(row) { return row[key]; });
     }
 
-var     pat_value = unpack(rows, 'share'),
+var     pat_value = unpack(rows, 'share');
         firm = unpack(rows, 'organization');
         ctry = unpack(rows, 'ctry_firm');
         uni = unpack(rows, 'university');
         text_var = [];
+        pat_v = [];
         
 
       for (var i = 0 ; i < ctry.length ; i++){
                 text_var.push('Assignee: ' + firm[i] + '<br>' + 
                 'University: ' + uni[i] + '<br>' + 'Country of origin: ' + ctry[i] + '<br>' +  
-                          'Share to overall: ' + roundToTwo(pat_value[i]) + '%');
+                          'Value: ' + roundToTwo(pat_value[i]) + '%');
+                 pat_v.push(pat_value[i]/100);
               }
+              
 
 
 var data= [{
-            y: pat_value,
+            y: pat_v,
             x: firm,
             customdata: text_var,
             hovertemplate:  '%{customdata}' + '<extra></extra>',
             type: 'bar',
             marker: {
     color: d3.interpolateViridis(0.7)}}];
-            
+   
+
  var layout = {
           scrollZoom: false,
-          autosize: false,
+          autosize: true,
           hovermode: "closest",
           hoverlabel: { bgcolor: "#FFF" },
-          height: 500,
+     //     height: 500,
           bargap: 0.2,
            margin: {l: 70, t: 20, b: 150, r: 100},
           showlegend: false,
           scrollZoom: false,
    yaxis: {fixedrange: true,
             zeroline: false,
+            showgrid: false,
+            tickformat: '.1%', 
             tickfont: {size: 14, width: 2},
-            title: {text: '<b>Share in total number of mRNA patent applications<br>(percentage)</b>'}}
+            title: {text: '<b>% of total mRNA patent applications</b>'}},
+  xaxis: {fixedrange: true}
  };            
             
             
@@ -280,9 +289,9 @@ Plotly.newPlot('plot_firm', data, layout, {displayModeBar: false});
 </script>
 </head>
 
+<body>
 <div id='plot_firm'></div>
 
- 
 
 </body>
      <span style="font-size:0.8em"><em>Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>. The data is available on <a href="https://github.com/ch54321/mrna_tech/blob/master/firm_mrna.csv" target ="blank">Github</a>.</em></span></p>
@@ -293,7 +302,7 @@ Plotly.newPlot('plot_firm', data, layout, {displayModeBar: false});
 <strong><em>Universities are very active in mRNA-related patent applications</em></strong>
 </blockquote>
 </div>
-<p>Novartis takes a very high 3th place which indicates that Swiss pharmacists possess a high scientific interest and know-how when it comes to mRNA research and development. Another very interesting observation is that universities are very active in mRNA-related patent applications, which shows how crucial the role of academic research is for the emergence of new technologies.</p>
+<p>Novartis takes a very high 3th place which indicates that Swiss pharmacists possess a high scientific interest and know-how when it comes to mRNA research and development. Another very interesting observation is that universities are very active in mRNA-related patent applications, which highlights the importance of academic research for the emergence of new technologies.</p>
 <p><br></p>
 <div>
 <iframe id="slider" width="100%&quot;" height="400" scrolling="no" frameBorder="0" style="overflow: hidden" src="https://innoscape.de/general_stuff/teaser/mrna_teaser.html">

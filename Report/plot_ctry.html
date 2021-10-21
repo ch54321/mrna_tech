@@ -17,7 +17,7 @@
 <script>
 
 function roundToTwo(num) {    
-    return +(Math.round(num + "e+2")  + "e-2");
+    return +(Math.round(num + "e+1")  + "e-1");
 }
 
 Plotly.d3.csv("https://raw.githubusercontent.com/ch54321/mrna_tech/master/ctry_trend_mrna.csv", function(err, rows){
@@ -64,7 +64,7 @@ var     allTech = unpack(rows, 'ctry_inv'),
                 currentFiling.push(filing[i]);
                 text_var.push('Country: ' + ctry_name[i] + '<br>' +  
                           'Filing: ' + filing[i] + '<br>' +
-                          'Value: ' + roundToTwo(pat_value[i]));
+                          'Value: ' + roundToTwo(pat_value[i]*100) + '%');
 
 
           //      current_color.push(color_var[i]);
@@ -88,9 +88,9 @@ var     allTech = unpack(rows, 'ctry_inv'),
 
 
 if(chosenvar_2 == "mrna_pharma_i"){
-  var y_title = '<b>Share of mRNA in all pharma patent applications</b>';
+  var y_title = '<b>% of mRNA in pharma patent applications</b>';
 } else {
-  var y_title = '<b>Share of a country in global mRNA patent applications</b>';
+  var y_title = '<b>% of a country in total mRNA patent applications</b>';
 }
 
         var trace1 = {
@@ -123,9 +123,9 @@ if(chosenvar_2 == "mrna_pharma_i"){
 
 var layout = {
   scrollZoom: false,
-  autosize: false,
-  width: 800,
-  height: 500,
+  autosize: true,
+//  width: 800,
+//  height: 500,
   hovermode: "closest",
     margin: {
     l: 100,
@@ -136,21 +136,22 @@ var layout = {
 
    xaxis: {
      fixedrange: true,
-         range: [2012, 2021],
+         range: [2012, 2020],
 
     title: '<b>Filing year</b>',
     zeroline: false,
     showaxis: true,
     showline: false,
-    ticks: 'outside'
-//    showgrid: false
+    ticks: 'outside',
+    showgrid: false
   },
   yaxis: {
     fixedrange: true,
     title: y_title,
     showline: false,
     zeroline: false,
-//    showgrid: false,
+    tickformat: '.1%', 
+    showgrid: false,
     ticks: 'outside'
     }
 };
@@ -220,8 +221,8 @@ chosenvar_2.addEventListener('change', updateCountry, false);
       <div class="plot" id="plotdiv"></div>
       <div class="control-row">
         <select class="selectpicker" id="select_2" name="select2" data-actions-box="true">
-        <option value="mrna_pharma_i" selected>mRNA to pharma</option>  
-        <option value="share_mrna_world">Share country in global mRNA</option>  
+        <option value="mrna_pharma_i" selected>mRNA in total pharma</option>  
+        <option value="share_mrna_world">Share in total mRNA</option>  
         </select>
     </div>
   </div>

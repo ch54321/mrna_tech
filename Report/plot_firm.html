@@ -26,43 +26,50 @@ function unpack(rows, key) {
         return rows.map(function(row) { return row[key]; });
     }
 
-var     pat_value = unpack(rows, 'share'),
+var     pat_value = unpack(rows, 'share');
         firm = unpack(rows, 'organization');
         ctry = unpack(rows, 'ctry_firm');
         uni = unpack(rows, 'university');
         text_var = [];
+        pat_v = [];
         
 
       for (var i = 0 ; i < ctry.length ; i++){
                 text_var.push('Assignee: ' + firm[i] + '<br>' + 
                 'University: ' + uni[i] + '<br>' + 'Country of origin: ' + ctry[i] + '<br>' +  
-                          'Share to overall: ' + roundToTwo(pat_value[i]) + '%');
+                          'Value: ' + roundToTwo(pat_value[i]) + '%');
+                 pat_v.push(pat_value[i]/100);
               }
+              
 
 
 var data= [{
-            y: pat_value,
+            y: pat_v,
             x: firm,
             customdata: text_var,
             hovertemplate:  '%{customdata}' + '<extra></extra>',
             type: 'bar',
             marker: {
     color: d3.interpolateViridis(0.7)}}];
-            
+   
+
  var layout = {
           scrollZoom: false,
-          autosize: false,
+          autosize: true,
           hovermode: "closest",
           hoverlabel: { bgcolor: "#FFF" },
-          height: 500,
+     //     height: 500,
           bargap: 0.2,
            margin: {l: 70, t: 20, b: 150, r: 100},
           showlegend: false,
           scrollZoom: false,
    yaxis: {fixedrange: true,
             zeroline: false,
+            showgrid: false,
+            tickformat: '.1%', 
             tickfont: {size: 14, width: 2},
-            title: {text: '<b>Share in total number of mRNA patent applications<br>(percentage)</b>'}}
+            title: {text: '<b>% of total mRNA patent applications</b>'}},
+  xaxis: {fixedrange: true}
  };            
             
             
@@ -72,9 +79,9 @@ Plotly.newPlot('plot_firm', data, layout, {displayModeBar: false});
 </script>
 </head>
 
+<body>
 <div id='plot_firm'></div>
 
- 
 
 </body>
     

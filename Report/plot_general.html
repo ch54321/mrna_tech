@@ -41,9 +41,9 @@ var data= [{
         
 var layout = {
             scrollZoom: false,
-              autosize: false,
-  width: 800,
-  height: 500,
+              autosize: true,
+//  width: 800,
+//  height: 500,
     margin: {
     l: 100,
     r: 100,
@@ -53,21 +53,22 @@ var layout = {
 
    xaxis: {
      fixedrange: true,
-         range: [2012, 2021],
+         range: [2012, 2020],
 
     title: '<b>Filing year</b>',
     zeroline: false,
     showaxis: true,
     showline: false,
-    ticks: 'outside'
-//    showgrid: false
+    ticks: 'outside',
+    showgrid: false
   },
   yaxis: {
+    tickformat: '.1%', 
     fixedrange: true,
-    range: [0, 0.09],
-    title: '<b>Share of mRNA in all pharma patent applications</b>',
+  //  range: [0, 0.09],
+    title: '<b>% of mRNA in total pharma patent applications</b>',
     showline: false,
-//    showgrid: false,
+    showgrid: false,
     ticks: 'outside'
     }
 };
