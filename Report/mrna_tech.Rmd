@@ -98,7 +98,7 @@ But which research hubs are mainly responsible for developing this (possibly) br
 
 <br>
 
-Three interesting conclusions may be drawn from Figure 2. First, the Western world drives mRNA-patenting activity compared to big Asian research hubs. Second, until 2014, the USA had the largest (relative) share of mRNA based patents in the world and third, since 2015, Germany’s pharmaceuticals have strongly focused on developing and patenting mRNA-based technologies. Nonetheless, the USA remains the most productive mRNA patenting hub where roughly 60% of all mRNA based patents in the world are developed (see our second indicator: share of each country’s mRNA patents in the total number of mRNA patents in the world), however, Germany is rapidly catching up over the last three years.  
+Three interesting conclusions may be drawn from Figure 2. First, the Western world drives the mRNA-patenting activity compared to big Asian research hubs. Second, until 2014, the USA had the largest (relative to domestic pharma patents) share of mRNA based patents in the world and third, since 2015, Germany’s pharmaceuticals have strongly profiled their pharma patent applications portfolio towards mRNA technology, becoming an industry that is focused on developing and patenting mRNA-based technologies the most world-wide. Nonetheless, the USA remains the most productive mRNA patenting hub where roughly 60% of all global mRNA based patents are developed (see our second indicator: share of each country’s mRNA patents in the total number of mRNA patents in the world), however, Germany is rapidly catching up over the last three years.  
 
 <div class=bloc_div>
 <blockquote>***Germany’s pharmaceuticals have strongly focused on developing and patenting mRNA-based technologies***</blockquote>
@@ -125,7 +125,7 @@ The most patent applications have been made by Curevac and Moderna, both appeare
 <blockquote>***Universities are very active in mRNA-related patent applications***</blockquote>
 </div>
 
-Novartis takes a very high 3th place which indicates that Swiss pharmacists possess a high scientific interest and know-how when it comes to mRNA research and development. Another very interesting observation is that universities are very active in mRNA-related patent applications, which shows how crucial the role of academic research is for the emergence of new technologies.  
+Novartis takes a very high 3th place which indicates that Swiss pharmacists possess a high scientific interest and know-how when it comes to mRNA research and development. Another very interesting observation is that universities are very active in mRNA-related patent applications, which highlights the importance of academic research for the emergence of new technologies.  
 
 <br>
 
