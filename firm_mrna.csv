@@ -1,16 +1,16 @@
-"","organization","ctry_firm","num","num_ges","share"
-"1","Curevac","DE",142,4800,2.95833333333333
-"2","Moderna","US",113,4800,2.35416666666667
-"3","Novartis","CH",75,4800,1.5625
-"4","MIT","US",70,4800,1.45833333333333
-"5","University of California","US",66,4800,1.375
-"6","University of Massachusetts","US",58,4800,1.20833333333333
-"7","Ionis Pharmaceuticals","US",52,4800,1.08333333333333
-"8","Harvard University","US",49,4800,1.02083333333333
-"9","Johns Hopkins University","US",48,4800,1
-"10","Alnylam Pharmaceuticals","US",45,4800,0.9375
-"11","Isis Pharmaceuticals","US",42,4800,0.875
-"12","University of Texas","US",40,4800,0.833333333333333
-"13","protiva biotherapeutics inc","CA",37,4800,0.770833333333333
-"14","University of Pennsylvania","US",35,4800,0.729166666666667
-"15","Duke University","US",33,4800,0.6875
+"","organization","ctry_firm","share","university"
+"1","Curevac","Germany",2.95833333333333,"no"
+"2","Moderna","United States",2.35416666666667,"no"
+"3","Novartis","Switzerland",1.5625,"no"
+"4","MIT","United States",1.45833333333333,"yes"
+"5","University of California","United States",1.375,"yes"
+"6","University of Massachusetts","United States",1.20833333333333,"yes"
+"7","Ionis Pharmaceuticals","United States",1.08333333333333,"no"
+"8","Harvard University","United States",1.02083333333333,"yes"
+"9","Johns Hopkins University","United States",1,"yes"
+"10","Alnylam Pharmaceuticals","United States",0.9375,"no"
+"11","Isis Pharmaceuticals","United States",0.875,"no"
+"12","University of Texas","United States",0.833333333333333,"yes"
+"13","Protiva Biotherapeutics","Canada",0.770833333333333,"no"
+"14","University of Pennsylvania","United States",0.729166666666667,"yes"
+"15","Duke University","United States",0.6875,"yes"
