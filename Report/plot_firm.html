@@ -44,32 +44,37 @@ var     pat_value = unpack(rows, 'share');
 
 
 var data= [{
-            y: pat_v,
-            x: firm,
+            y: firm,
+            x: pat_v,
             customdata: text_var,
             hovertemplate:  '%{customdata}' + '<extra></extra>',
-            type: 'bar',
+            type: 'bar', 
+            orientation: 'h',
             marker: {
     color: d3.interpolateViridis(0.7)}}];
    
 
  var layout = {
+     responsive: true,
           scrollZoom: false,
           autosize: true,
           hovermode: "closest",
           hoverlabel: { bgcolor: "#FFF" },
      //     height: 500,
+     //     width: '100%',
           bargap: 0.1,
-           margin: {l: 70, t: 20, b: 150, r: 100},
+           margin: {l: 160, t: 20, b: 150, r: 100},
           showlegend: false,
           scrollZoom: false,
-   yaxis: {fixedrange: true,
+   xaxis: {fixedrange: true,
             zeroline: false,
             showgrid: false,
             tickformat: '.1%', 
             tickfont: {size: 14, width: 2},
-            title: {text: '<b>% of total mRNA patent applications</b>'}},
-  xaxis: {fixedrange: true}
+            title: {text: '<b>% of total mRNA patent applic.</b>'}},
+   yaxis: {fixedrange: true,
+     autorange:'reversed'
+   }
  };            
             
             
@@ -80,7 +85,7 @@ Plotly.newPlot('plot_firm', data, layout, {displayModeBar: false});
 </head>
 
 <body>
-<div id='plot_firm'></div>
+<div id='plot_firm' style="width: 120%;"></div>
 
 
 </body>

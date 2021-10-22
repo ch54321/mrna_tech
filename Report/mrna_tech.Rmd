@@ -78,7 +78,7 @@ viewer?embedded=true&url=https://innoscape.de/mRNA/MRNA_Technology.pdf" width="1
 <br>
 
 <hr class="hr_red">
-#### **Figure 1: Share of patent applications in the field of mRNA relative to pharmaceuticals is increasing**
+#### **Figure 1: Strong increase of mRNA patent applications relative to pharmaceuticals**
 ```{r, echo=FALSE}
 htmltools::includeHTML("plot_general.html")
 ```
@@ -113,7 +113,7 @@ Finally, it is utterly important to identify and acknowledge the world’s leadi
 <br>
 
 <hr class="hr_red">
-#### **Figure 3: Universities play a significant role in mRNA patents**
+#### **Figure 3: Universities play a significant role in mRNA patent applications**
 ```{r, echo=FALSE}
 htmltools::includeHTML("plot_firm.html")
 ```
