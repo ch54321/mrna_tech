@@ -45,14 +45,14 @@ output:
 <a href='mailto:christian.rutzer@unibas.ch'>christian.rutzer@unibas.ch</a>">*Christian Rutzer*</a>
 </p>
 
-<!-- <p style="text-align: left; line-height: 150%;">
+<p style="text-align: left; line-height: 150%;">
 *Share this article:* 
 &nbsp;
-<a href='https://www.linkedin.com/sharing/share-offsite/?url=https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A6838804469455577088/?actorCompanyId=685023090' class="fa fa-linkedin" style='color:black;text-decoration: none;' target='_blank'></a>
+<a href='https://www.linkedin.com/sharing/share-offsite/?url=https://www.linkedin.com/feed/update/urn:li:activity:6857209327149690880/' class="fa fa-linkedin" style='color:black;text-decoration: none;' target='_blank'></a>
 &nbsp;
-<a href='https://twitter.com/cieb_unibas/status/1433007915175235586' class="fa fa-twitter" style='color:black;text-decoration: none;' target='_blank'></a>
+<a href='https://twitter.com/cieb_unibas/status/1451443201412198401' class="fa fa-twitter" style='color:black;text-decoration: none;' target='_blank'></a>
 </p>
- -->
+
  
 ![](mrna_pic.jpg){width=100%} 
 
@@ -82,7 +82,7 @@ viewer?embedded=true&url=https://innoscape.de/mRNA/MRNA_Technology.pdf" width="1
 ```{r, echo=FALSE}
 htmltools::includeHTML("plot_general.html")
 ```
-<span style="font-size:0.8em">*Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>. The data shown in the plot is available on <a href="https://github.com/ch54321/mrna_tech/blob/master/general_trend_mrna.csv" target ="blank">Github</a>.*</span>
+<span style="font-size:0.8em">*Sources and notes: Own estimations of the <a href="https://www.cieb.unibas.ch" target ="blank">CIEB</a> using data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>. The data shown in the plot is available on <a href="https://github.com/ch54321/mrna_tech/blob/master/general_trend_mrna.csv" target ="blank">Github</a>.*</span>
 
 <br>
 
@@ -96,11 +96,11 @@ But which research hubs are mainly responsible for developing this (possibly) br
 <iframe width="100%" height="540" scrolling="no" frameBorder="0" style="overflow: hidden" src="https://innoscape.de/mRNA/plot_ctry.html" id="geo_plot">
 <p>Your browser does not support iframes</p>
 </iframe>
-<span style="font-size:0.8em">*Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>. The data shown in the plot is available on <a href="https://github.com/ch54321/mrna_tech/blob/master/ctry_trend_mrna.csv" target ="blank">Github</a>.*</span>
+<span style="font-size:0.8em">*Sources and notes: Own estimations of the <a href="https://www.cieb.unibas.ch" target ="blank">CIEB</a> using data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>. The data shown in the plot is available on <a href="https://github.com/ch54321/mrna_tech/blob/master/ctry_trend_mrna.csv" target ="blank">Github</a>.*</span>
 
 <br>
 
-Three interesting conclusions may be drawn from Figure 2. First, the Western world drives the mRNA-patenting activity compared to big Asian research hubs. Second, until 2014, the USA had the largest (relative to domestic pharma patents) share of mRNA based patent applications at the USPTO and third, since 2015, Germany’s pharmaceuticals have strongly profiled their pharma patent applications portfolio towards mRNA technology, becoming world-wide the industry that is most focused on developing and patenting mRNA based technologies. Nonetheless, the USA remains the most productive mRNA patenting hub where roughly 60% of all USPTO mRNA patent applications are developed (see our second indicator: Share in total mRNA), however, Germany is rapidly catching up over the last three years.  
+Three interesting conclusions may be drawn from Figure 2. First, the Western world drives the mRNA-patenting activity compared to big Asian research hubs. Second, until 2014, the USA had the largest (relative to domestic pharma patents) share of mRNA based patent applications at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a> and third, since 2015, Germany’s pharmaceuticals have strongly profiled their pharma patent applications portfolio towards mRNA technology, becoming world-wide the industry that is most focused on developing and patenting mRNA based technologies. Nonetheless, the USA remains the most productive mRNA patenting hub where roughly 60% of all <a href="https://www.uspto.gov/" target ="blank">USPTO</a> mRNA patent applications are developed (see our second indicator: Share in total mRNA), however, Germany is rapidly catching up over the last three years.  
 
 <div class=bloc_div>
 <blockquote>***Germany’s pharmaceuticals have strongly focused on developing and patenting mRNA based technologies***</blockquote>
@@ -108,7 +108,7 @@ Three interesting conclusions may be drawn from Figure 2. First, the Western wor
 
 <br>
 
-Finally, it is utterly important to identify and acknowledge the world’s leading pharmaceutical organizations in the field of mRNA technology. The following graph presents the 15 firms and universities with the largest number of filed mRNA patent applications at the USPTO. 
+Finally, it is utterly important to identify and acknowledge the world’s leading pharmaceutical organizations in the field of mRNA technology. The following graph presents the 15 firms and universities with the largest number of filed mRNA patent applications at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>. 
 
 <br>
 
@@ -117,7 +117,7 @@ Finally, it is utterly important to identify and acknowledge the world’s leadi
 ```{r, echo=FALSE}
 htmltools::includeHTML("plot_firm.html")
 ```
-<span style="font-size:0.8em">*Sources and notes: Own estimations of the CIEB based on data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>. The data shown in the plot is available on <a href="https://github.com/ch54321/mrna_tech/blob/master/firm_mrna.csv" target ="blank">Github</a>.*</span>
+<span style="font-size:0.8em">*Sources and notes: Own estimations of the <a href="https://www.cieb.unibas.ch" target ="blank">CIEB</a> using data on patent applications filed at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>. The data shown in the plot is available on <a href="https://github.com/ch54321/mrna_tech/blob/master/firm_mrna.csv" target ="blank">Github</a>.*</span>
 
 <br>
 
@@ -127,7 +127,7 @@ The most patent applications have been made by Curevac and Moderna, both appeare
 <blockquote>***Universities are very active in mRNA-related patent applications***</blockquote>
 </div>
 
-Novartis takes a very high 3th place which indicates that Swiss pharmacists possess a high scientific interest and know-how when it comes to mRNA research and development. Another very interesting observation is that universities are very active in mRNA-related patent applications, which highlights the importance of academic research for the emergence of new technologies.  
+Novartis takes a very high 3rd place which indicates that Swiss pharmacists possess a high scientific interest and know-how when it comes to mRNA research and development. Another very interesting observation is that universities are very active in mRNA-related patent applications, which highlights the importance of academic research for the emergence of new technologies.  
 
 <br>
 

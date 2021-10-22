@@ -81,16 +81,16 @@ var     allTech = unpack(rows, 'ctry_inv'),
 
 
     // Default Country Data
-    setBubblePlot(["CH", "DE", "US"], ["mrna_pharma_i"]);
+    setBubblePlot(["CH", "DE", "US", "JP", "CN"], ["mrna_pharma_i"]);
 
     function setBubblePlot(chosenCountry, chosenvar_2) {
         getCountryData(chosenCountry, chosenvar_2);
 
 
 if(chosenvar_2 == "mrna_pharma_i"){
-  var y_title = '<b>% of mRNA in pharma patent applications</b>';
+  var y_title = '<b>Share of mRNA in<br>pharmaceutical patent applications</b>';
 } else {
-  var y_title = '<b>% of a country in total mRNA patent applications</b>';
+  var y_title = '<b>Country&#39;s share in<br>total mRNA patent applications</b>';
 }
 
         var trace1 = {
@@ -98,7 +98,9 @@ if(chosenvar_2 == "mrna_pharma_i"){
             x: currentFiling,
             customdata: text_var,
             type: 'scatter',
-            mode: 'lines',
+            mode: 'lines+markers',
+//            line: {dash: 'solid'},
+//            marker: {symbol: ['line-ew',"diamond-open","line-ew","line-ew","diamond-open","line-ew", 'line-ew',"diamond-open","line-ew","line-ew","diamond-open","line-ew"]},
             hovertemplate:  '%{customdata}' + '<extra></extra>',
             transforms: [{type: 'groupby', 
                           groups: currentInv,
@@ -119,6 +121,7 @@ if(chosenvar_2 == "mrna_pharma_i"){
             }], 
         };
         
+        
         var data = [trace1];
 
 var layout = {
@@ -129,7 +132,7 @@ var layout = {
   hovermode: "closest",
     margin: {
     l: 100,
-    r: 100,
+    r: 10,
     b: 100,
     t: 20
   },
@@ -200,12 +203,12 @@ chosenvar_2.addEventListener('change', updateCountry, false);
       <div class="control-row">
         <select class="selectpicker" id="select_1" name="select1" multiple="multiple" data-actions-box="true">
         <option value="CA">Canada</option>  
-        <option value="CN">China</option>  
+        <option value="CN" selected>China</option>  
         <option value="FR">France</option>
         <option value="DE" selected>Germany</option>
         <option value="GB">Great Britain</option>
         <option value="IT">Italy</option>
-        <option value="JP">Japan</option>
+        <option value="JP" selected>Japan</option>
         <option value="KR">South Korea</option>
         <option value="ES">Spain</option>
         <option value="SE">Sweden</option>
