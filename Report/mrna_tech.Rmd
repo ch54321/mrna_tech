@@ -66,7 +66,9 @@ output:
 
 <br>
 
-As Figure 1 indicates, the rapid development and availability of the mRNA technology is manifested in an increasing number of patent applications relative to all pharma patent applications at the <a href="https://www.uspto.gov/" target ="blank">US patent office (USPTO)</a> in the past several years. 
+As Figure 1 indicates, the rapid development of the mRNA technology is manifested in an increasing number of patent applications relative to all pharma patent applications at the <a href="https://www.uspto.gov/" target ="blank">US patent office (USPTO)</a> in the past several years. This surge in innovation is likely one reason why mRNA based vaccines against covid-19 could have been developed at a record pace. The success of the mRNA technology in vaccinating against Covid-19 could now lead to new breakthroughs in other areas as well, particularly in cancer therapy. 
+
+
 <!--A look at the share of mRNA based patent applications in total pharma patent applications (on the world level) reveals that applied research in the field of mRNA started to evolve rapidly only in the past several years.-->
 
 <details>
@@ -86,7 +88,7 @@ htmltools::includeHTML("plot_general.html")
 
 <br>
 
-But which research hubs are mainly responsible for developing this (possibly) breakthrough medical treatment technology of the future? In order to check which country-level pharma eco-systems are the most active ones in developing the mRNA technology, we plot the share of mRNA based patent applications in a country’s overall pharmaceutical patent applications filed at the <a href=https://www.patentsview.org target = “_blank”>USPTO</a>. 
+Against this background, the question arises which research hubs are mainly responsible for developing this (possibly) breakthrough medical treatment technology of the future. In order to check which country-level pharma eco-systems are the most active ones in developing the mRNA technology, we plot the share of mRNA based patent applications in a country’s overall pharmaceutical patent applications filed at the <a href=https://www.patentsview.org target = “_blank”>USPTO</a>. 
 
 <br>
 
