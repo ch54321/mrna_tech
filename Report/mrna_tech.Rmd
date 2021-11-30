@@ -34,7 +34,7 @@ output:
 <br>
 
 <p style="text-align: left; line-height: 100%;">
-*October 2021* by <a href="#" data-placement="bottom" data-toggle="tooltip"  data-html="true" title="<img src='https://innoscape.de/authors/DF_picture.jpg'><b>Dragan Filimonovic</b> is a project collaborator and research associate at the <a href='https://cieb.unibas.ch' target = “_blank”>Center for International Economics and Business | CIEB</a>. He holds a PhD in Economics from the University of Basel and is specialized in applying methods for causal inference to evaluate public policies. Dragan is passionate about working with big data and is always in pursuit of finding creative solutions to interesting economic riddles.
+*October 2021 (slightly revised December 2021)* by <a href="#" data-placement="bottom" data-toggle="tooltip"  data-html="true" title="<img src='https://innoscape.de/authors/DF_picture.jpg'><b>Dragan Filimonovic</b> is a project collaborator and research associate at the <a href='https://cieb.unibas.ch' target = “_blank”>Center for International Economics and Business | CIEB</a>. He holds a PhD in Economics from the University of Basel and is specialized in applying methods for causal inference to evaluate public policies. Dragan is passionate about working with big data and is always in pursuit of finding creative solutions to interesting economic riddles.
 <br>
 <a href='https://www.linkedin.com/in/dragan-filimonovic-39303b47' target = “_blank”>LinkedIn</a> 
 <br>
@@ -95,7 +95,7 @@ Against this background, the question arises which research hubs are mainly resp
 
 <br>
 
-Three interesting conclusions may be drawn from Figure 2. First, the Western world drives the mRNA-patenting activity compared to big Asian research hubs. Second, until 2014, the USA had the largest (relative to domestic pharma patents) share of mRNA based patent applications at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>. Third, since 2015, Germany’s pharmaceuticals have strongly profiled their pharma patent applications portfolio towards mRNA technology, becoming world-wide the industry that is most focused on developing and patenting mRNA based technologies. Nonetheless, the USA remains the largest mRNA patenting hub where roughly 60% of all <a href="https://www.uspto.gov/" target ="blank">USPTO</a> mRNA patent applications are developed (you can investigate this in the Figure 2 by choosing Share in total mRNA). However, Germany is rapidly catching up over the last three years.  
+Three interesting conclusions may be drawn from Figure 2. First, the Western world drives the mRNA-patenting activity compared to big Asian research hubs. Second, until 2014, the USA had the largest (relative to domestic pharma patents) share of mRNA based patent applications at the <a href="https://www.uspto.gov/" target ="blank">USPTO</a>. Third, since 2015, Germany’s pharmaceuticals have strongly focused on developing and patenting mRNA based technologies, becoming world-wide the industry that is most focused on developing and patenting mRNA based technologies. Nonetheless, the USA remains the largest mRNA patenting hub where roughly 60% of all <a href="https://www.uspto.gov/" target ="blank">USPTO</a> mRNA patent applications are developed (you can investigate this in the Figure 2 by choosing Share in total mRNA). However, Germany is rapidly catching up over the last three years.  
 
 <div class=bloc_div>
 <blockquote>***Germany’s pharmaceuticals have strongly focused on developing and patenting mRNA based technologies***</blockquote>
@@ -122,7 +122,14 @@ Most patent applications were filed by Curevac and Moderna, both appeared as vac
 <blockquote>***Universities are very active in mRNA-related patent applications***</blockquote>
 </div>
 
-Novartis takes a very high 3rd place which indicates that Swiss pharmacists possess a high scientific interest and know-how when it comes to mRNA research and development. Another very interesting observation is that universities are very active in mRNA-related patent applications, which highlights the importance of academic research for the emergence of new technologies.  
+It is also very interesting to observe that there is only one large pharmaceutical firm among the top 15 patent applicants - Novartis. This demonstrates that mRNA based medicine is an emerging technology mainly developed and advanced by startups and small pharma companies. The fact that universities are also very active in mRNA-related patent applications substantiate this impression and highlights the importance of academic research for the emergence of new technologies in general.  
+
+<br>
+
+### **What could this mean for Switzerland? **
+
+The mRNA technology seems not to be in the focus of the Swiss pharmaceutical industry. Instead, the US and, increasingly, innovations from Germany dominate the field. According to an article in the <a href = https://www.economist.com/the-world-ahead/2021/11/08/ugur-sahin-and-ozlem-tureci-on-the-future-of-mrna-therapies target = “_blank”>The Economist</a> by <a href = https://de.wikipedia.org/wiki/%C3%96zlem_T%C3%BCreci target = “_blank”>Ozlem Tureci</a> and <a href = https://de.wikipedia.org/wiki/U%C4%9Fur_%C5%9Eahin target = “_blank”>Ugur Sahin</a> (the founders of <a href = https://de.wikipedia.org/wiki/Biontech target = “_blank”> BioNTech SE</a>), in 15 years one third of all new approved drugs could be based on the mRNA technology. Hence, could it be that the Swiss pharma-hub largely is missing out on one of the next big things in pharmaceuticals? 
+
 
 <br>
 
