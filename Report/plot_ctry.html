@@ -30,7 +30,6 @@ var     allTech = unpack(rows, 'ctry_inv'),
         filing = unpack(rows, 'filing'),
         variable = unpack(rows, 'variable'),
         ctry_name = unpack(rows, 'ctry_name'),
-        listofCountries = [],
         currentCountry = [],
         currentpat_value = [],
         currentInv = [],
@@ -39,11 +38,6 @@ var     allTech = unpack(rows, 'ctry_inv'),
         current_color = [];
 
 
-    for (var i = 0; i < allTech.length; i++ ){
-        if (listofCountries.indexOf(allTech[i]) === -1 ){
-            listofCountries.push(allTech[i]);
-        }
-    }
     
     
    function getCountryData(chosenCountry, chosenvar_2) {
@@ -56,8 +50,8 @@ var     allTech = unpack(rows, 'ctry_inv'),
      //           document.getElementById("demo").innerHTML = variable;
 
         for (var i = 0 ; i < allTech.length ; i++){
-        for(var j = 0; j < allTech.length; j ++){
-            for(var k = 0; k < allTech.length; k ++){
+        for(var j = 0; j < 12; j ++){
+            for(var k = 0; k < 2; k ++){
             if ( allTech[i] === chosenCountry[j] && variable[i] === chosenvar_2[k]) {
                 currentpat_value.push(pat_value[i]);
                 currentInv.push(allTech[i]);
@@ -115,7 +109,7 @@ if(chosenvar_2 == "mrna_pharma_i"){
                           {target: 'ES', value: {marker: {color: d3.interpolateViridis(0.5)}}},
                           {target: 'DE', value: {marker: {color: d3.interpolateViridis(0.9)}}},
                           {target: 'GB', value: {marker: {color: d3.interpolateViridis(0.8)}}},
-                          {target: 'SE', value: {marker: {color: d3.interpolateViridis(0.6)}}},      
+                          {target: 'SE', value: {marker: {color: d3.interpolateViridis(0.6)}}},  
                           {target: 'IT', value: {marker: {color: d3.interpolateViridis(1)}}}
                           ]
             }], 
@@ -167,7 +161,6 @@ var countrySelector = document.getElementById("select_1");
 var chosenvar_2 = document.getElementById("select_2");
 
 
-
 function updateCountry(){
   var var_2l = [];
   var var_1l = [];
@@ -201,7 +194,7 @@ chosenvar_2.addEventListener('change', updateCountry, false);
   <div id="bubbleplots">
       <div class="plot" id="plotdiv"></div>
       <div class="control-row">
-        <select class="selectpicker" id="select_1" name="select1" multiple="multiple" data-actions-box="true">
+        <select class="selectpicker" id="select_1" name="select1" multiple="multiple" data-max-options="6" data-actions-box="true">
         <option value="CA">Canada</option>  
         <option value="CN" selected>China</option>  
         <option value="FR">France</option>
@@ -230,7 +223,6 @@ chosenvar_2.addEventListener('change', updateCountry, false);
     </div>
   </div>
 </div>
-
 
 
 <div id='myDiv'></div>
